@@ -58,7 +58,7 @@ const Header = () => {
     return (
         <React.Fragment>
             {/* Start Top Header */}
-            <div className="top-header ">
+            {/* <div className="top-header ">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-7 col-lg-7">
@@ -99,7 +99,7 @@ const Header = () => {
                   
                 </div>
                 
-            </div>
+            </div> */}
             {/* End Top Header */}
 
             <Navbar
