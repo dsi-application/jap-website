@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import '../src/loading.css';
-import beachBall from './beach-ball.gif'; // Update the import path accordingly
+import './loading.css'; // Update the import path for your CSS file
+import beachBall from './rowing.mp4'; // Update the import path for your video file
 
 const Loading = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -16,7 +16,9 @@ const Loading = () => {
 
   return (
     <div className="loading-container">
-      <img className="loading-gif" src={beachBall} alt="Loading..." />
+      <video className="loading-video" autoPlay loop muted>
+        <source src={beachBall} type="video/mp4" />
+      </video>
     </div>
   );
 };

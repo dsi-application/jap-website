@@ -61,7 +61,7 @@ const Header = () => {
       >
         <LinkContainer to="/">
           <Navbar.Brand className="nav-cal">
-          <Image width="100px" src="/badge-logo.png" style={{ marginTop: '-1px' }} />
+          <Image width="80px" src="/badge-logo.png" style={{ marginTop: '6px' }} />
           </Navbar.Brand>
         </LinkContainer>
 

@@ -16,6 +16,7 @@ const SliderComponent = () => {
 
   return (
     <>
+    
       <div className="slider-container">
         <Slider className="slider-wrapper main" autoplay={300}>
           {slider.map((item, index) => (
@@ -43,6 +44,9 @@ const SliderComponent = () => {
         </div>
       </div>
       </div>
+      <br>
+      </br>
+      <br></br>
       <div className="counter-container">
         <Counter />
       </div>
