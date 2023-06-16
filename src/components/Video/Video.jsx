@@ -49,11 +49,11 @@ const Video = () => {
                         <MDBCol md="3" lg="4" xl="3" className="mb-4 dark-grey-text">
                         <br/> 
                       
-                       <iframe maxWidth="100%" width="700"  height="300"   position= "relative"  left="80px"
+                       {/* <iframe maxWidth="100%" width="700"  height="300"   position= "relative"  left="80px"
                          src="./conference.mp4" title="2023" frameborder="0" 
                            allow="autoplay; encrypted-media " 
                        allowfullscreen>
-                       </iframe> 
+                       </iframe>  */}
 
     
                         </MDBCol>

@@ -58,7 +58,7 @@ const Header = () => {
     return (
         <React.Fragment>
             {/* Start Top Header */}
-            <div className="top-header ">
+            {/* <div className="top-header ">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-7 col-lg-7">
@@ -99,7 +99,7 @@ const Header = () => {
                   
                 </div>
                 
-            </div>
+            </div> */}
             {/* End Top Header */}
 
             <Navbar
@@ -108,12 +108,16 @@ const Header = () => {
                 expand="xxl" 
                 className="navbar navbar-expand-md navbar-light  "
                 collapseOnSelect={true}
+                style={{zIndex: 1000, opacity: 0.9}}
             >
                      <LinkContainer to="/">
                 
-                <Navbar.Brand className="nav-cal" >
-                    <Image width="100px"src="/logo-final.png" />
-                </Navbar.Brand>
+                     <Navbar>
+  <Navbar.Brand className="nav-cal" style={{ overflow: "hidden" }}>
+    <Image height="90px" width="100px" src="/logo-final.png" />
+  </Navbar.Brand>
+</Navbar>
+
 
 
             </LinkContainer>

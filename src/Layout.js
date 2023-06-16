@@ -29,6 +29,7 @@ import Partners from './components/Partner/Partner';
 
 
 import Works from './components/Works/Works';
+import Footer1 from './components/Footer/Footer1';
 
 
 const Layout = () => {
@@ -61,7 +62,7 @@ const Layout = () => {
                
 
                 </Switch>
-                <Footer />
+                <Footer1 />
             </Router>
         </>
     )
