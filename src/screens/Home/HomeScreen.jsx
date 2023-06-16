@@ -15,9 +15,8 @@ const HomeScreen = () => {
 
     return (
         <>
-            <Meta />
-            
-            <SliderComponent />
+           
+           <SliderComponent />
 
             <Video/>
 

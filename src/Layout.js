@@ -20,6 +20,8 @@ import Services from './components/Services/Services';
 import Partners from './components/Partner/Partner';
 import Works from './components/Works/Works';
 import Loading from './loading';
+import Footer1 from './components/Footer/Footer1';
+
 
 const Layout = () => {
   const [isLoaded, setIsLoaded] = useState(true);
@@ -58,7 +60,7 @@ const Layout = () => {
             <Route exact path="/services" component={Services} />
             <Route exact path="/works" component={Works} />
           </Switch>
-          <Footer />
+          <Footer1 />
         </Router>
       )}
     </>
