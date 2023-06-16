@@ -50,7 +50,7 @@ const Video = () => {
                         <MDBCol md="3" lg="4" xl="3" className="mb-4 dark-grey-text">
                         <br/> 
                       
-                        <Image width="500px" src="/badge-logo.png" style={{ marginTop: '-1px' }} />
+                        {/* <Image width="500px" src="/badge-logo.png" style={{ marginTop: '-1px' }} /> */}
 
 
     
