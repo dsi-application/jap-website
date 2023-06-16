@@ -31,7 +31,7 @@ const Organisation = () => {
               <Col>
                 <Row className=" text-center text-md-left ">
                 <Fade top>
-                    <h2  style={{ color: '#78c2ad'}} className="font-weight-bold  text-center">
+                    <h2  style={{ color: '#00B451'}} className="font-weight-bold  text-center">
                     <InlineIcon icon="mdi:calendar-multiple"  width="30" height="30" inline={false} /> Organisation </h2>
                 </Fade>
      <br/> <br/>

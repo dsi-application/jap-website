@@ -1,48 +1,4 @@
-/*
-@File: Rosy Template Styles
-
-* This file contains the styling for the actual theme, this
-is the file you need to edit to change the look of the
-theme.
-
-This files contents are outlined below>>>>>
-
-*******************************************
-*******************************************
-
-==== INDEX PAGE CSS
-
-** - Default CSS
-** - Preloaders CSS
-** - Top Header area CSS
-** - Main Menu CSS
-** - Slider area CSS
-** - Feature Area CSS
-** - Services Area CSS
-** - CTA Area CSS
-** - Our Works Area CSS
-** - About Us Area CSS
-** - About Us area CSS
-** - Our Team Area CSS
-** - Blog & News Area CSS
-** - Video Area CSS
-** - Projects area CSS
-** - Pricing Table Area CSS
-** - Fun Facts Area CSS
-** - FAQ Area CSS
-** - Partners Area CSS
-** - Contact Area CSS
-** - Footer Area CSS
-** - Scroll Top link CSS
-** - Breadcumbs CSS
-
-*/
-
-
-/* ========================= 
-    Default CSS
-   ========================= */
-   @import url('https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i');
    @import url('https://fonts.googleapis.com/css?family=Monoton');
    :root {
     background: #fff;
@@ -56,11 +12,14 @@ This files contents are outlined below>>>>>
   }
   
   body {
-    width: auto;
     margin: 0;
-    padding: 0;
+    width: 100%;
+    height: 100%;
+
+    background-size: cover;
+    background-position: center;
+    background-image: url('./background-logo.png');
   }
- 
   
   #root {
     height: 100%;

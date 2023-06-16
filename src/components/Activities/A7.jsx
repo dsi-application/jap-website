@@ -1,163 +1,106 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import Icofont from "react-icofont";
 import PropTypes from "prop-types";
 import ScrollAnimation from "react-animate-on-scroll";
 import { MDBContainer, MDBRow } from "mdbreact";
 import Lightbox from "react-image-lightbox";
-import './styleAcit.css'
-
+import './styleAcit.css';
 
 const images = [
-    "./R1.png" ,
-    "./R2.png" ,
-    "./R3.png" ,
-    "./R4.png"
-  ];
-  
-  const smallImages = [
-    "./R1.png" ,
-    "./R2.png" ,
-    "./R3.png" ,
-    "./R4.png"
-     
-  ];
+  "./R1.png",
+  "./R2.png",
+  "./R3.png",
+  "./R4.png"
+];
 
-class A7 extends Component {
-    constructor(props) {
-        super(props);
-    
-        this.state = {
-          photoIndex: 0,
-          isOpen: false
-        };
-      }
+const smallImages = [
+  "./R1.png",
+  "./R2.png",
+  "./R3.png",
+  "./R4.png"
+];
 
-    render() {
-        const { photoIndex, isOpen } = this.state;
-        return (
-            <React.Fragment>
-                <section id="works" className="our-works ptb-100">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-lg-12 text-center">
-                                <ScrollAnimation animateIn="fadeInUp">
-                                    <div className="section-title">
-                                        <h2>{this.props.sectionTitle}</h2>
-                                        <p>{this.props.sectionDescription}</p>
-                                        <span className="section-title-bg">
-                                            {this.props.SectionbgTitle}
-                                        </span>
-                                    </div>
-                                </ScrollAnimation>
-                            </div>
-                        </div>
-                    </div>
+const A7 = ({ sectionTitle, sectionDescription, SectionbgTitle }) => {
+  const [photoIndex, setPhotoIndex] = useState(0);
+  const [isOpen, setIsOpen] = useState(false);
 
-                    <MDBContainer>
-                        <div className="mdb-lightbox no-margin">
-                            <MDBRow>
-                                <div className="col-md-6 col-lg-6">
-                                    <div className="work-details">
-                                        <figure>
-                                            <img
-                                            src={smallImages[0]}
-                                            alt="Gallery"
-                                            className="img-fluid"
-                                            width= "360px"
-                                            height = "390px"
-                                            />
-                                          
-                                        </figure>
-                                    </div>
-                                </div>
+  const openLightbox = (index) => {
+    setPhotoIndex(index);
+    setIsOpen(true);
+  };
 
-                                <div className="col-md-6 col-lg-6">
-                                    <div className="work-details">
-                                        <figure>
-                                            <img
-                                            src={smallImages[1]}
-                                            alt="Gallery"
-                                            className="img-fluid"
-                                            width= "360px"
-                                            height = "390px"
-                                            />
-                                          
-                                        </figure>
-                                    </div>
-                                </div>
+  return (
+    <React.Fragment>
+      <section id="works" className="our-works ptb-100">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12 text-center">
+              <ScrollAnimation animateIn="fadeInUp">
+                <div className="section-title">
+                  <h2>{sectionTitle}</h2>
+                  <p>{sectionDescription}</p>
+                  <span className="section-title-bg">
+                    {SectionbgTitle}
+                  </span>
+                </div>
+              </ScrollAnimation>
+            </div>
+          </div>
+        </div>
 
-                                <div className="col-md-6 col-lg-6">
-                                    <div className="work-details">
-                                        <figure>
-                                            <img
-                                            src={smallImages[2]}
-                                            alt="Gallery"
-                                            className="img-fluid"
-                                            width= "360px"
-                                            height = "390px"
-                                            />
-                                            
-                                        </figure>
-                                    </div>
-                                </div>
-
-                                <div className="col-md-6 col-lg-6">
-                                    <div className="work-details">
-                                        <figure>
-                                            <img
-                                            src={smallImages[3]}
-                                            alt="Gallery"
-                                            className="img-fluid"
-                                            width= "360px"
-                                            height = "390px"
-                                            />
-                                            
-                                        </figure>
-                                    </div>
-                                </div>
-
-                         
-
-                            </MDBRow>
-                        </div>
-                        {isOpen && (
-                        <Lightbox
-                            mainSrc={images[photoIndex]}
-                            nextSrc={images[(photoIndex + 1) % images.length]}
-                            prevSrc={images[(photoIndex + images.length - 1) % images.length]}
-                            imageTitle={photoIndex + 1 + "/" + images.length}
-                            onCloseRequest={() => this.setState({ isOpen: false })}
-                            onMovePrevRequest={() =>
-                            this.setState({
-                                photoIndex: (photoIndex + images.length - 1) % images.length
-                            })
-                            }
-                            onMoveNextRequest={() =>
-                            this.setState({
-                                photoIndex: (photoIndex + 1) % images.length
-                            })
-                            }
-                        />
-                        )}
-                    </MDBContainer>
-                </section>
-            </React.Fragment>
-        );
-    }
-}
-//Props Types
-A7.propTypes = {
-    SectionbgTitle: PropTypes.string,
-    sectionTitle: PropTypes.string,
-    sectionDescription: PropTypes.string,
+        <MDBContainer>
+          <div className="mdb-lightbox no-margin">
+            <MDBRow>
+              {smallImages.map((image, index) => (
+                <div className="col-md-6 col-lg-6" key={index}>
+                  <div className="work-details">
+                    <figure onClick={() => openLightbox(index)}>
+                      <img
+                        src={image}
+                        alt="Gallery"
+                        className="img-fluid"
+                        width="360px"
+                        height="390px"
+                      />
+                    </figure>
+                  </div>
+                </div>
+              ))}
+            </MDBRow>
+          </div>
+          {isOpen && (
+            <Lightbox
+              mainSrc={images[photoIndex]}
+              nextSrc={images[(photoIndex + 1) % images.length]}
+              prevSrc={images[(photoIndex + images.length - 1) % images.length]}
+              imageTitle={`${photoIndex + 1}/${images.length}`}
+              onCloseRequest={() => setIsOpen(false)}
+              onMovePrevRequest={() =>
+                setPhotoIndex((photoIndex + images.length - 1) % images.length)
+              }
+              onMoveNextRequest={() =>
+                setPhotoIndex((photoIndex + 1) % images.length)
+              }
+            />
+          )}
+        </MDBContainer>
+      </section>
+    </React.Fragment>
+  );
 };
 
-//Default Props
+// Props Types
+A7.propTypes = {
+  SectionbgTitle: PropTypes.string,
+  sectionTitle: PropTypes.string,
+  sectionDescription: PropTypes.string,
+};
+
+// Default Props
 A7.defaultProps = {
-    SectionbgTitle: "",
-    sectionTitle: "  ",
-    sectionDescription:
-        "",
+  SectionbgTitle: "",
+  sectionTitle: "  ",
+  sectionDescription: "",
 };
 
 export default A7;
