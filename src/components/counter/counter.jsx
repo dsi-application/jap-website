@@ -22,12 +22,13 @@ const Counter = () => {
       />
 
       <div className="container">
+        
         <div className="row justify-content-center">
-          <div className="col-md-9">
+          <div className="col-lg-9">
             <div className="card counter-card shadow">
               <div className="card-body">
                 <div className="row">
-                  <div className="col-md-4 col-sm-6">
+                  <div className="col-lg-4 col-md-6">
                     <div className="counter">
                       <CountUp start={0} end={1410} delay={0} duration={10} separator="">
                         {({ countUpRef }) => (
@@ -35,10 +36,10 @@ const Counter = () => {
                         )}
                       </CountUp>
                       <h3>Athletes</h3>
-                      <i className="fas fa-swimmer" style={{ color: '#001689' }}></i>
+                      <i className="fas fa-swimmer counter-icon" style={{ color: '#001689' }}></i>
                     </div>
                   </div>
-                  <div className="col-md-4 col-sm-6">
+                  <div className="col-lg-4 col-md-6">
                     <div className="counter">
                       <CountUp start={0} end={54} delay={0} duration={10} separator="">
                         {({ countUpRef }) => (
@@ -46,10 +47,10 @@ const Counter = () => {
                         )}
                       </CountUp>
                       <h3>Total Countries Participating</h3>
-                      <i className="fas fa-globe-africa" style={{ color: '#FDE021' }}></i>
+                      <i className="fas fa-globe-africa counter-icon" style={{ color: '#FDE021' }}></i>
                     </div>
                   </div>
-                  <div className="col-md-4 col-sm-6">
+                  <div className="col-lg-4 col-md-6">
                     <div className="counter">
                       <CountUp start={0} end={16} delay={0} duration={10} separator="">
                         {({ countUpRef }) => (
@@ -57,7 +58,7 @@ const Counter = () => {
                         )}
                       </CountUp>
                       <h3>Total Sports Number</h3>
-                      <i className="fas fa-volleyball-ball" style={{ color: '#00B451' }}></i>
+                      <i className="fas fa-volleyball-ball counter-icon" style={{ color: '#00B451' }} ></i>
                     </div>
                   </div>
                 </div>

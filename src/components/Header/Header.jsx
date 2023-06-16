@@ -43,7 +43,7 @@ const Header = () => {
       >
         <LinkContainer to="/">
           <Navbar.Brand className="nav-cal">
-            <Image width="100px" src="/logo-final.png" />
+          <Image width="100px" src="/badge-logo.png" style={{ marginTop: '-1px' }} />
           </Navbar.Brand>
         </LinkContainer>
 
@@ -81,10 +81,10 @@ const Header = () => {
               </NavDropdown>
 
               <NavDropdown title="Actualités" id="navDropdown" className="nav-cal">
-                <Nav.Link href="http://www.cnot.org.tn/category/jap12/" target="_blank">
+                <Nav.Link href="http://www.cnot.org.tn/category/jap12/" target="_blank" style={{ color: '#000000' }}>
                   JAP
                 </Nav.Link>
-                <Nav.Link href="https://www.tap.info.tn/fr" target="_blank">
+                <Nav.Link href="https://www.tap.info.tn/fr" target="_blank" style={{ color: '#000000' }}>
                   TAP
                 </Nav.Link>
               </NavDropdown>
