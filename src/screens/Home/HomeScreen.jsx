@@ -24,7 +24,7 @@ const HomeScreen = () => {
 
             <Works/>
 
-            <Sal2019/>
+            {/* <Sal2019/> */}
 
             <Partners/>
 
