@@ -25,16 +25,16 @@ const Sal2019 = () => {
       return (
         <Container className="main mt-5 mb-4 text-center text-md-left"  fluid>
      
-     <h2  style={{ color: '#78c2ad'}} className="font-weight-bold  text-center">
+     <h2  style={{ color: '#00B451'}} className="font-weight-bold  text-center">
      <InlineIcon icon="mdi:calendar-multiple"  width="30" height="30" inline={false} /> Evénements  </h2>
      <br/> <br/>
 
      <MDBContainer className="mt-5 mb-4 text-center text-md-left">
               
-                <h5  style={{ color: '#78b2c2'}} className="font-weight-bold  text-center">
+                <h5  style={{ color: '#00A7E1'}} className="text">
                             <InlineIcon icon="mdi:jabber"  width="30" height="30" inline={false} />1ère édition des JAP, Sal (Cap Vert) 2019  </h5>
                             <br/> <br/>
-                 <h6 className="mt-10 mb-10 text-center text-md-left " >Environ 886 sportifs dont 416 athlètes féminines se sont affrontés en juin 2019 dans les 11 disciplines au programme 
+                 <h6 className="text " >Environ 886 sportifs dont 416 athlètes féminines se sont affrontés en juin 2019 dans les 11 disciplines au programme 
                  <br/>  de la première édition des Jeux de Africains de Plage : 
                  <br/> <br/>  l'athlétisme ,
                   le basketball 3x3 ,
@@ -52,7 +52,7 @@ Cette première édition regroupa 42 Comités Nationaux Olympiques africains.
 </h6>
 
 <br/> <br/>
-<h5  style={{ color: '#78b2c2'}} className="font-weight-bold  text-center">
+<h5  style={{ color: '#00A7E1'}} className="text">
 
  <InlineIcon icon="mdi:jabber"  width="30" height="30" inline={false} /> Jeux Mondiaux de Plage (Doha 2019, Bali 2023) </h5>  
 

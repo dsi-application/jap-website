@@ -5,6 +5,8 @@ import "react-animated-slider/build/horizontal.css";
 import "normalize.css/normalize.css";
 import './styles/slider-animation.css';
 import './styles/styles.css';
+import Counter from '../counter/counter.jsx';
+
 
 const SliderComponent = () => {
 
@@ -34,6 +36,10 @@ const SliderComponent = () => {
                 ))}
             
             </Slider>
+            <br></br>
+
+            <Counter />
+          
         </div>
 
 
