@@ -1,17 +1,19 @@
-import React, { useEffect } from 'react';
+import React, { useEffect,useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import PropTypes from 'prop-types';
 import Icofont from 'react-icofont';
 import { NavLink } from 'react-router-dom';
 import { Link } from 'react-scroll';
 import { LinkContainer } from 'react-router-bootstrap';
-import { Navbar, Container, Nav, NavDropdown, Image, Form ,Button} from 'react-bootstrap';
 import SearchModal from './SearchModal';
 import './Header.css';
 import MenuIcon from '@mui/icons-material/Menu';
 import { borderRadius } from '@mui/system';
 
 
+import { Navbar, Container, Nav, NavDropdown, Image, Form,FormGroup,Button } from 'react-bootstrap';
+import { I18nextProvider, useTranslation } from 'react-i18next';
+import {Input}  from "reactstrap";
 const Header = () => {
   const dispatch = useDispatch();
 
@@ -34,6 +36,23 @@ const Header = () => {
       document.getElementById('collaspe-btn').click();
     }
   };
+  const {t,i18n} = useTranslation();
+  const [language, setLanguage] = useState(i18n.language);
+  const changeLanguage = (e) => {
+    i18n.changeLanguage(e.target.value);
+    console.log(t);
+    console.log(i18n.language);
+    setLanguage(e.target.value);
+    
+  };
+  useEffect(()=>{
+    for (let index = 0; index < document.getElementsByClassName('lang').length; index++) {
+      const element = document.getElementsByClassName('lang')[index];
+      if(element.value === i18n.language){
+        element.setAttribute("selected", "true")
+      }
+    }
+  })
 
   return (
     <React.Fragment>
@@ -46,7 +65,7 @@ const Header = () => {
       >
         <LinkContainer to="/">
           <Navbar.Brand className="nav-cal">
-          <Image width="100px" src="/badge-logo.png" style={{ marginTop: '-1px' }} />
+          <Image width="80px" src="/badge-logo.png" style={{ marginTop: '6px' }} />
           </Navbar.Brand>
         </LinkContainer>
 
@@ -126,8 +145,18 @@ const Header = () => {
                   Médiathèque
                 </Nav.Link>
               </LinkContainer>
+            
             </Nav>
           </Navbar.Collapse>
+          <Form className=''>
+            <FormGroup  className="">
+              {/* <Label for="LanguageSelect">Language :</Label> */}
+              <Input id="languageSelect" name="select" type="select" onChange={changeLanguage} >
+                <option value="en" className="lang">EN</option>
+                <option value="fr" className="lang">FR</option>
+              </Input>
+            </FormGroup>
+          </Form>
         </Container>
       </Navbar>
     </React.Fragment>

@@ -35,7 +35,7 @@ const Counter = () => {
                           <span className="counter-value" ref={countUpRef} />
                         )}
                       </CountUp>
-                      <h3>Athletes</h3>
+                      <h3>Athlètes</h3>
                       <i className="fas fa-swimmer counter-icon" style={{ color: '#001689' }}></i>
                     </div>
                   </div>
@@ -46,7 +46,7 @@ const Counter = () => {
                           <span className="counter-value" ref={countUpRef} />
                         )}
                       </CountUp>
-                      <h3>Total Countries Participating</h3>
+                      <h3>Nombre total de pays participants</h3>
                       <i className="fas fa-globe-africa counter-icon" style={{ color: '#FDE021' }}></i>
                     </div>
                   </div>
@@ -57,7 +57,7 @@ const Counter = () => {
                           <span className="counter-value" ref={countUpRef} />
                         )}
                       </CountUp>
-                      <h3>Total Sports Number</h3>
+                      <h3>Nombre total de sports</h3>
                       <i className="fas fa-volleyball-ball counter-icon" style={{ color: '#00B451' }} ></i>
                     </div>
                   </div>

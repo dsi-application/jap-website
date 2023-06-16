@@ -23,6 +23,7 @@ import Loading from './loading';
 import Footer1 from './components/Footer/Footer1';
 
 
+
 const Layout = () => {
   const [isLoaded, setIsLoaded] = useState(true);
 
@@ -34,14 +35,17 @@ const Layout = () => {
 
   return (
     <>
+      
       {isLoaded ? (
         <div className="loader-container">
           <Loading />
         </div>
       ) : (
+       
         <Router>
           <Header />
           <Switch>
+            
             <Route exact path="/" component={HomeScreen} />
             <Route exact path="/etablissement" component={Etablissement} />
             <Route exact path="/cardMenu" component={CardMenu} />
@@ -62,7 +66,9 @@ const Layout = () => {
           </Switch>
           <Footer1 />
         </Router>
+  
       )}
+   
     </>
   );
 };

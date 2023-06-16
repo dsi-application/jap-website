@@ -8,12 +8,15 @@ import store from './store';
 import './bootstrap.min.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import i18n from "./i18n";
+import { I18nextProvider } from "react-i18next";
 dotenv.config('./../.env');
 
 ReactDOM.render(
   <Provider store={store}>
+       <I18nextProvider>
     <App />
+    </I18nextProvider>
   </Provider>,
   document.getElementById('root')
 );

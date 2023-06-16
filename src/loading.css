@@ -1,12 +1,11 @@
 .loading-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
-  .loading-gif {
-    width: 200px;
-    height: 200px;
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loading-video {
+  width: 300px;
+  height: 300px;
+}

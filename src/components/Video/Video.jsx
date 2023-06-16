@@ -22,7 +22,8 @@ const Video = () => {
     const reactPlayerRef = useRef();
 
     return (
-      
+      <>
+   
         <Container className="main"  fluid>
         <MDBContainer className="mt-5 mb-4 text-center text-md-left">
                     <MDBRow className="mt-2">
@@ -49,7 +50,8 @@ const Video = () => {
                         <MDBCol md="3" lg="4" xl="3" className="mb-4 dark-grey-text">
                         <br/> 
                       
-                    
+                        <Image width="500px" src="/badge-logo.png" style={{ marginTop: '-1px' }} />
+
 
     
                         </MDBCol>
@@ -58,6 +60,7 @@ const Video = () => {
 
         
         </Container>
+        </>
     )
 }
 
