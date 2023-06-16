@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'Nunito';
+    src: url('./Noto\ Sans\ Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+.counter{
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+} 
+
+.counter .counter-value{
+    font-size: 30px;
+    font-weight: 700;
+    color:#070707;
+    line-height: 110px;
+    width: 120px;
+    height: 80px;
+    margin: 0 auto 12px;
+    display: block;
+    position: relative;  
+}
+i {
+  font-size: 20px !Important;
+}
+.counter .counter-value:before{
+    content: '';
+    background-color: #fff;
+    position: absolute;
+    left: 7px;
+    right: 7px;
+    top: 7px;
+    bottom: 7px;
+    z-index: -1;
+    clip-path: inherit;
+}
+.counter-icon {
+  font-size: 40px !important;
+}
+.counter h3{
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+    margin: 0;
+    padding-bottom: 30px;
+}
+@media screen and (max-width:990px){
+    .counter{ margin-bottom: 40px; }
+    .col-md-4 {
+      border-right: 0px dashed black;
+      border-bottom: 1px dashed black;
+      width: 50%;
+      margin: auto auto;
+    }
+}   

@@ -27,7 +27,7 @@ class Pictogramme extends Component {
                             <div className="col-lg-12 text-center">
                                 <ScrollAnimation animateIn="fadeInUp">
                                     <div className="section-title">
-                                    <h2  style={{ color: '#78c2ad'}} className="font-weight-bold  text-center">
+                                    <h2  style={{ color: '#00B451'}} className="font-weight-bold  text-center">
                                    <InlineIcon icon="mdi:graphql"  width="50" height="50" inline={false} />  {this.props.sectionTitle} </h2>    
 
                                         

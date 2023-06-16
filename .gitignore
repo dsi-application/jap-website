@@ -2,7 +2,8 @@
 
 # dependencies
 /node_modules
-
+.eslintcache
+package-lock.json
 # testing
 /coverage
 
@@ -10,7 +11,7 @@
 # production
 /build
 /dist
-
+.eslintcache
 # misc
 .DS_Store
 .idea

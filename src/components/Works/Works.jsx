@@ -33,7 +33,7 @@ const Works = () => {
         <Container className="main"  fluid>
    
         <MDBContainer className="mt-5 mb-4 text-center text-md-left">
-        <h2  style={{ color: '#78c2ad'}} className="font-weight-bold  text-center">
+        <h2  style={{ color: '#00B451'}} className="font-weight-bold  text-center">
      <InlineIcon icon="mdi:campfire"  width="50" height="50"  /> Jeux bas carbone :   </h2>
      <br/>
                     <MDBRow className="mt-2">
@@ -41,36 +41,36 @@ const Works = () => {
      
                         <MDBCol md="3" lg="3" xl="6" className="mb-4 dark-grey-text">
                         
-                            <h6 >
+                            <h6  className="text" >
                             Les Jeux Africains de plage 2023 s'engagent pour le climat avec sobriété, innovation et audace. Le CNOT établit un nouveau standard environnemental et JAP23 joue un rôle majeur dans la lutte contre les changements climatiques. Cinq actions concrètes sont prévues lors des JAP.
                             </h6>
 
                           <br/> 
 
-                          <h6>
+                          <h6  className="text">
                             <InlineIcon icon="mdi:gamepad-round"  width="30" height="30" inline={false} /> Décréter la semaine JAP, du 23 au 30 juin 2023, semaine sans plastique dans toute la zone Yasmine Hammamet. En consacrant les moyens de son application. </h6>
 
                           <br/> 
                         
 
-                         <h6 >
+                         <h6 className="text" >
                         <InlineIcon icon="mdi:gamepad-round-down"  width="30" height="30" inline={false} />  Équiper les rues de la zone en poubelles sélectives. Deux couleurs : une pour toutes matières recyclables et une pour les détritus organiques.   </h6>
 
                         <br/> 
                       
 
-                         <h6 >
+                         <h6 className="text" >
                         <InlineIcon icon="mdi:gamepad-round-left"  width="30" height="30" inline={false} />   Pendant toute la durée des JAP, interdire la circulation automobile dans les artères principales connexes aux jeux. </h6>
 
                         <br/> 
              
-                         <h6  >
+                         <h6  className="text" >
                         <InlineIcon icon="mdi:gamepad-round-right"  width="30" height="30" inline={false} />  Réserver un lot de terrain de 1200 m2 environ, à Nabeul, siège du gouvernorat dont dépend Hammamet, pour la plantation d’un jardin Olympique africain, à l’occasion des JAP 2023.   </h6>
 
                         <br/> 
                        
 
-                         <h6  >
+                         <h6  className="text" >
                         <InlineIcon icon="mdi:gamepad-round-up"  width="30" height="30" inline={false} /> 
                         Les calèches facilitent la mobilité des VIP et des responsables d'équipes entre les hôtels et le site de compétition, tandis que les athlètes se déplacent à pied entre leurs hôtels et le site d'entraînement et de compétition.
                           </h6>

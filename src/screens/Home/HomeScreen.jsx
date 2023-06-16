@@ -15,9 +15,26 @@ const HomeScreen = () => {
 
     return (
         <>
-            <Meta />
-            
-            <SliderComponent />
+              {/* <div
+        style={{
+          backgroundImage: `url('../../background.png')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          width: '100%',
+          height: '120vh',
+          position: 'fixed',
+          zIndex: '-1',
+          display: 'flex',
+          overflow: 'hidden',
+          justifyContent: 'center',
+          alignItems: 'center',
+          animation: 'water 5s ease-in-out infinite',
+        }}
+      >
+        
+      </div> */}
+      
+           <SliderComponent />
 
             <Video/>
 
@@ -25,7 +42,7 @@ const HomeScreen = () => {
 
             <Works/>
 
-            <Sal2019/>
+            {/* <Sal2019/> */}
 
             <Partners/>
 
