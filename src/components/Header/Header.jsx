@@ -145,10 +145,7 @@ const Header = () => {
                   Médiathèque
                 </Nav.Link>
               </LinkContainer>
-            
-            </Nav>
-          </Navbar.Collapse>
-          <Form className=''>
+              <Form className=''>
             <FormGroup  className="">
               {/* <Label for="LanguageSelect">Language :</Label> */}
               <Input id="languageSelect" name="select" type="select" onChange={changeLanguage} >
@@ -157,6 +154,10 @@ const Header = () => {
               </Input>
             </FormGroup>
           </Form>
+            
+            </Nav>
+          </Navbar.Collapse>
+          
         </Container>
       </Navbar>
     </React.Fragment>

@@ -15,7 +15,7 @@ const HomeScreen = () => {
 
     return (
         <>
-              <div
+              {/* <div
         style={{
           backgroundImage: `url('../../background.png')`,
           backgroundSize: 'cover',
@@ -32,7 +32,7 @@ const HomeScreen = () => {
         }}
       >
         
-      </div>
+      </div> */}
       
            <SliderComponent />
 
