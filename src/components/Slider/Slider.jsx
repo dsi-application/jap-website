@@ -16,15 +16,15 @@ const SliderComponent = () => {
 
     return (
         <div>
-            <Slider className="slider-wrapper "  autoplay={300}>
+            <Slider className="slider-wrapper main"  autoplay={300}>
                 
                 {slider.map((item, index) => (
                     <div
                         key={index}
-                        className="container-fluid slider-content"
+                        className="slider-content"
                         style={{ background: `url('${item.image}') no-repeat center center`}}
-                         width = "100%"
-                         height = "100%"
+                        width = "1920px"
+                        height = "900px"
                     >
                         <div className="inner">
                             <h1>{item.title}</h1>

@@ -48,6 +48,7 @@ This files contents are outlined below>>>>>
     background: #fff;
     /* @apply text-zinc-300; */
     min-width: 100%;
+    overflow: hidden;
   }
   html {
     min-height: 100%;
@@ -55,8 +56,11 @@ This files contents are outlined below>>>>>
   }
   
   body {
+    width: auto;
     margin: 0;
+    padding: 0;
   }
+ 
   
   #root {
     height: 100%;

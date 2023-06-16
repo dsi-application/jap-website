@@ -14,7 +14,7 @@ header {
 header section {
   max-width: 1300px;
   margin: auto;
-  padding: 0;
+  padding: 20px;
   background: #FFD800;
 }
 
@@ -68,13 +68,12 @@ button:hover {
   max-width: 1335px;
   box-sizing: border-box;
   padding: 0 20px;
-  /* margin: auto; */
-  margin-top: 100px;
+  margin: auto;
 }
 
 .wrapper a {
   display: flex;
-  margin: 0px;
+  margin: 5px;
 }
 
 .wrapper a:first-child {
@@ -82,11 +81,9 @@ button:hover {
 }
 
 .slider-wrapper {
-  position: relative !important;
-  padding: 0;
-  width: 100%;
+  position: relative;
   height: 70vh;
-  overflow:hidden;
+  overflow: hidden;
   font-family: 'Lato', sans-serif;
   box-sizing: border-box;
 } 
