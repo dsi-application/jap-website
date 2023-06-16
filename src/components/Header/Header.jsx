@@ -16,7 +16,6 @@ import { I18nextProvider, useTranslation } from 'react-i18next';
 import {Input}  from "reactstrap";
 const Header = () => {
   const dispatch = useDispatch();
-
   useEffect(() => {
     let elem = document.getElementById('navbar');
     document.addEventListener('scroll', () => {
@@ -79,33 +78,32 @@ const Header = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
             id="collaspe-btn"
-            style={{ backgroundColor: 'transparent' }}
           >
              {/* <span className="navbar-toggler-icon"></span> */}
-                <MenuIcon className="tog-icon" style={{color:"blue", border:"1px solid blue",padding:"2px", borderRadius:"3px"}}/>
+                <MenuIcon className="tog-icon" style={{color:"black", border:"1px solid blue",padding:"2px", borderRadius:"3px"}}/>
 
           </Navbar.Toggle>
           <Navbar.Collapse id="navbarSupportedContent">
             <Nav className="navbar navbar-expand-sm navbar-dark">
               <LinkContainer style={{ color: '#001689' }} to="/">
                 <Nav.Link className="nav-cal" onClick={closeNavbar}>
-                  Accueil
+                 {t("home")}
                 </Nav.Link>
               </LinkContainer>
 
-              <NavDropdown style={{ color: '#001689' }} title="À propos" id="navDropdown" className="nav-cal">
+              <NavDropdown style={{ color: '#001689' }} title={t("about")} id="navDropdown" className="nav-cal">
                 <LinkContainer to="/etablissement" class="dropdownitem">
-                  <NavDropdown.Item>Historique</NavDropdown.Item>
+                  <NavDropdown.Item>{t("hist")}</NavDropdown.Item>
                 </LinkContainer>
                 <LinkContainer to="/sal2019">
-                  <NavDropdown.Item>Événements passés</NavDropdown.Item>
+                  <NavDropdown.Item>{t("event")}</NavDropdown.Item>
                 </LinkContainer>
                 <LinkContainer to="/organisation">
-                  <NavDropdown.Item>Organisation</NavDropdown.Item>
+                  <NavDropdown.Item>{t("organisation")}</NavDropdown.Item>
                 </LinkContainer>
               </NavDropdown>
 
-              <NavDropdown title="Actualités" id="navDropdown" className="nav-cal">
+              <NavDropdown title={t("news")} id="navDropdown" className="nav-cal">
                 <NavDropdown.Item   href="http://www.cnot.org.tn/category/jap12/" target="_blank" style={{ color: '#000000' }}>
                   JAP
                 </NavDropdown.Item>
@@ -116,33 +114,33 @@ const Header = () => {
 
               <LinkContainer style={{ color: '#001689' }} to="/cardMenu">
                 <Nav.Link className="nav-cal" onClick={closeNavbar}>
-                  Calendrier
+                  {t("calender")}
                 </Nav.Link>
               </LinkContainer>
 
               <LinkContainer style={{ color: '#001689' }} to="/services">
                 <Nav.Link className="nav-cal" onClick={closeNavbar}>
-                  Competition
+                 {t("competition")}
                 </Nav.Link>
               </LinkContainer>
 
               <NavDropdown
                 style={{ color: '#001689' }}
-                title="Les sites (venues)"
+                title={t("site")}
                 id="navDropdown"
                 className="nav-cal"
               >
                 <LinkContainer to="/acit2">
-                  <NavDropdown.Item>Le site de compétition</NavDropdown.Item>
+                  <NavDropdown.Item>{t("comp")} </NavDropdown.Item>
                 </LinkContainer>
                 <LinkContainer to="/acit1">
-                  <NavDropdown.Item>Le village des athlètes</NavDropdown.Item>
+                  <NavDropdown.Item>{t("village")}</NavDropdown.Item>
                 </LinkContainer>
               </NavDropdown>
 
               <LinkContainer style={{ color: '#001689' }} to="/activities">
                 <Nav.Link className="nav-cal" onClick={closeNavbar}>
-                  Médiathèque
+                {t("media")}
                 </Nav.Link>
               </LinkContainer>
               <Form className=''>

@@ -15,7 +15,7 @@ import frTranslation from './locales/fr/translation.json';
     .use(LanguageDetector)
     .use(Backend)
   .init({
-    lng: 'en', // default language
+    lng: 'fr', // default language
     fallbackLng: 'en', // fallback language if the detected language is not available
     resources: {
       en: { translation: enTranslation },
