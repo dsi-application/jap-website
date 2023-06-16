@@ -5,9 +5,13 @@ import Icofont from 'react-icofont';
 import { NavLink } from 'react-router-dom';
 import { Link } from 'react-scroll';
 import { LinkContainer } from 'react-router-bootstrap';
-import { Navbar, Container, Nav, NavDropdown, Image, Form,FormGroup } from 'react-bootstrap';
 import SearchModal from './SearchModal';
 import './Header.css';
+import MenuIcon from '@mui/icons-material/Menu';
+import { borderRadius } from '@mui/system';
+
+
+import { Navbar, Container, Nav, NavDropdown, Image, Form,FormGroup,Button } from 'react-bootstrap';
 import { I18nextProvider, useTranslation } from 'react-i18next';
 import {Input}  from "reactstrap";
 const Header = () => {
@@ -67,7 +71,7 @@ const Header = () => {
 
         <Container>
           <Navbar.Toggle
-            className="navbar-toggler"
+             className="navbar-toggler"
             type="button"
             data-toggle="collapse"
             data-target="#navbarSupportedContent"
@@ -75,8 +79,11 @@ const Header = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
             id="collaspe-btn"
+            style={{ backgroundColor: 'transparent' }}
           >
-             <span className="navbar-toggler-icon"></span>
+             {/* <span className="navbar-toggler-icon"></span> */}
+                <MenuIcon className="tog-icon" style={{color:"blue", border:"1px solid blue",padding:"2px", borderRadius:"3px"}}/>
+
           </Navbar.Toggle>
           <Navbar.Collapse id="navbarSupportedContent">
             <Nav className="navbar navbar-expand-sm navbar-dark">
@@ -99,12 +106,12 @@ const Header = () => {
               </NavDropdown>
 
               <NavDropdown title="Actualités" id="navDropdown" className="nav-cal">
-                <Nav.Link href="http://www.cnot.org.tn/category/jap12/" target="_blank" style={{ color: '#000000' }}>
+                <NavDropdown.Item   href="http://www.cnot.org.tn/category/jap12/" target="_blank" style={{ color: '#000000' }}>
                   JAP
-                </Nav.Link>
-                <Nav.Link href="https://www.tap.info.tn/fr" target="_blank" style={{ color: '#000000' }}>
+                </NavDropdown.Item>
+                <NavDropdown.Item href="https://www.tap.info.tn/fr" target="_blank" style={{ color: '#000000' }}>
                   TAP
-                </Nav.Link>
+                </NavDropdown.Item>
               </NavDropdown>
 
               <LinkContainer style={{ color: '#001689' }} to="/cardMenu">

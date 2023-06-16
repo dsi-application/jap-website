@@ -28,7 +28,7 @@ function Footer1() {
           </div>
         </div>
 
-        <div className="col-md-5"style={{ backgroundColor: "#0099FF", color: "white",margin:0 }}>
+        <div className="col-md-4"style={{ backgroundColor: "#0099FF", color: "white",margin:0 }}>
           <div
             className="d-flex flex-column justify-content-center"
             style={{ backgroundColor: "#0099FF", color: "white",margin:0 }}
@@ -44,7 +44,7 @@ function Footer1() {
           </div>
         </div>
 
-        <div className="col-md-3 d-flex justify-content-center align-content-center"style={{ backgroundColor: "#0099FF", color: "white",margin:0 }}>
+        <div className="col-md-4 d-flex justify-content-center align-content-center"style={{ backgroundColor: "#0099FF", color: "white",margin:0 }}>
         <div className="d-flex justify-content-center align-content-center align-items-center">
               <a
                 href="https://www.facebook.com/CNOTunisie"
