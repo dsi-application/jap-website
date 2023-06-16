@@ -54,7 +54,7 @@
   }
   .nav-cal {
     margin-left: 10px;
-  }
+     }
 }
 
 .header-icon {
@@ -87,6 +87,11 @@
 
 .menu-shrink .header-search .search-toggle {
   color: rgba(0, 0, 0, 0);
+}
+.navbar-toggler:hover {
+  background-color:rgba(0, 0, 255, 0.251) !important;
+  color: #fff;
+  /* Add any other desired styles */
 }
 
 .header-search .search-toggle i {
@@ -159,4 +164,10 @@
 .dropdownitem
 {
   font-family: 'Futura', sans-serif;
+}
+.dropdown-menu{
+  background-color: #0017893d !important;
+  color: #fff !important;
+  font-family: 'Futura', sans-serif;
+  font-weight: bold;
 }
