@@ -1,4 +1,4 @@
-* {
+/* * {
   text-decoration: none !important;;
 }
 .fab {
@@ -189,4 +189,10 @@
     margin-right:0;
     font-weight:600
   }
+} */
+@font-face {
+  font-family: 'Tropican';
+  src: url('./FontsFree-Net-Tropican-Demo.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }

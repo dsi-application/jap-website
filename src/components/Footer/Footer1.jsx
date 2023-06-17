@@ -1,5 +1,6 @@
 import React from "react";
 
+
 function Footer1() {
   return (
     <div className="container-fluid" style={{ position: "relative" ,margin:0,padding:0,zIndex:2}}>
@@ -34,9 +35,14 @@ function Footer1() {
             style={{ backgroundColor: "#0099FF", color: "white",margin:0 }}
           >
             <div className="flex-column mt-5">
-              <div>jap23@cnot.org.tn</div>
-              <div>Tel: +216 71 767 681 | Fax: +216 71 767 289</div>
-              <div>
+              <div style={{
+                fontFamily:'Tropican'
+
+              }}>jap23@cnot.org.tn</div>
+              <div style={{
+                fontFamily:'Tropican'}}>Tel: +216 71 767 681 | Fax: +216 71 767 289</div>
+              <div style={{
+                fontFamily:'Tropican'}}>
                 Centre Culturel et sportif de la Jeunesse El MEnzah VI -2091
                 Tunis
               </div>
