@@ -1,5 +1,6 @@
 import React from "react";
-
+import { InlineIcon } from '@iconify/react'; // For general icons
+import './Footer1.css'
 
 function Footer1() {
   return (
@@ -34,19 +35,19 @@ function Footer1() {
             className="d-flex flex-column justify-content-center"
             style={{ backgroundColor: "#0099FF", color: "white",margin:0 }}
           >
-            <div className="flex-column mt-5">
-              <div style={{
-                fontFamily:'Tropican'
+     <div className="flex-column mt-5">
+  <div style={{ fontFamily: 'Tropican', fontSize: '15px' }}>
+    <InlineIcon icon="mdi:email" width="30" height="30" inline={false} /> jap23@cnot.org.tn
+  </div>
+  <div style={{ fontFamily: 'Tropican', fontSize: '15px' }}>
+    <InlineIcon icon="mdi:phone" width="30" height="30" inline={false} /> Tel: +216 71 767 681 | Fax: +216 71 767 289
+  </div>
+  <div style={{ fontFamily: 'Tropican', fontSize: '15px' }}>
+    <InlineIcon icon="mdi:map-marker" width="30" height="30" inline={false} /> Centre Culturel et sportif de la Jeunesse El MEnzah VI -2091 Tunis
+  </div>
+</div>
 
-              }}>jap23@cnot.org.tn</div>
-              <div style={{
-                fontFamily:'Tropican'}}>Tel: +216 71 767 681 | Fax: +216 71 767 289</div>
-              <div style={{
-                fontFamily:'Tropican'}}>
-                Centre Culturel et sportif de la Jeunesse El MEnzah VI -2091
-                Tunis
-              </div>
-            </div>
+            
           </div>
         </div>
 

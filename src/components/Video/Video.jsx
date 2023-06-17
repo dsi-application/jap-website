@@ -46,12 +46,12 @@ const Video = () => {
                         <InlineIcon icon="mdi:home-city-outline"  width="30" height="30" inline={false} />   {t("here")}   </h6>
 
                         </MDBCol>
-                        <MDBCol md="3" lg="4" xl="3" className="mb-4 dark-grey-text">
+                        <MDBCol md="3" lg="5" xl="6" className="mb-4 dark-grey-text">
                         <br/> 
                       
                         {/* <Image width="500px" src="/badge-logo.png" style={{ marginTop: '-1px' }} /> */}
 
-                        <Image width="500px" src="/poster.jpg"  />
+                        <Image width="100%" src="/poster.jpg"  />
 
     
                         </MDBCol>
