@@ -4,6 +4,7 @@ import Backend from 'i18next-http-backend';
 import LanguageDetector from 'i18next-browser-languagedetector';
 import enTranslation from './locales/en/translation.json';
 import frTranslation from './locales/fr/translation.json';
+import  arTranslation from './locales/ar/translation.json'
 
 // the translations
 // (tip move them in a JSON file and import them,
@@ -20,6 +21,7 @@ import frTranslation from './locales/fr/translation.json';
     resources: {
       en: { translation: enTranslation },
       fr: { translation: frTranslation },
+      ar:{translation: arTranslation}
     },
   });
   export default i18n;

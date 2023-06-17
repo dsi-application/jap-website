@@ -14,7 +14,10 @@
    "village" : "Le village des athlètes",
    "media" : "  Médiathèque",
    "news": "Actualités",
-   "about":"À propos"
+   "about":"À propos",
+   "athlete" : "Athlètes",
+   "tot": "Nombre total de pays participants",
+   "sport" :"Nombre total de sports"
 
 
 }

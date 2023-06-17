@@ -149,6 +149,7 @@ const Header = () => {
               <Input id="languageSelect" name="select" type="select" onChange={changeLanguage} >
                 <option value="en" className="lang">EN</option>
                 <option value="fr" className="lang">FR</option>
+                <option value="ar" className='lang'>AR</option>
               </Input>
             </FormGroup>
           </Form>
