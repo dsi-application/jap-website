@@ -18,8 +18,20 @@ const slider = [
         
         image: "./TEQ07514.jpg",
     },
+    {
+        title: "",
+        description: "",
+        
+        image: "./Jeux-africains-de-plage-2023 .jpg",
+    },
 
- 
+  {
+        title: "",
+        description: "",
+        
+        image: "./wrestling.jpg",
+    },
+    
 
    
    
