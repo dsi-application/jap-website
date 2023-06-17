@@ -1,8 +1,13 @@
 import React, { useRef } from "react";
 import ReactPlayer from "react-player";
 import { Icon, InlineIcon } from '@iconify/react';
+
+import Zoom from 'react-reveal/Fade';
+
+
 import './styleAcit.css'
 import { useTranslation } from "react-i18next";
+
 
 import {
   Container,
@@ -23,58 +28,79 @@ const Acit1 = () => {
         <InlineIcon icon="mdi:town-hall" width="30" height="30" inline={false} /> {t("vill")}
       </h2>
 
-      <Row xs={1} md={2} className="g-4 center">
+      <Row className="justify-content-md-center">
         <CardDeck className='card-deck'>
-          <Col style={{ marginBottom: '40px', marginLeft: '120px' }}>
-            <Card border='primary' style={{ height: 950, width: 1000 }}>
-              <Card.Body className="main">
+          <Zoom cascade>
+            <Col xs="12" lg="12">
+              <Card border='primary' style={{ height: "100%", width: "100%" }}>
+                 <Card.Body className="main">
                 <Card.Title className='title'> {t('acti1')} </Card.Title>
                 <Card.Text className={i18n.language === "ar" ? "text-right" : "text-left"}>
                   {t('acti1text')}
                 </Card.Text>
                 <Card.Img style={{ height: 550, width: 900 }} variant="top" src="./parc.png" />
               </Card.Body>
-            </Card>
-          </Col>
-
-          <Col style={{ marginBottom: '40px', marginLeft: '120px' }}>
-            <Card border='primary' style={{ height: 900, width: 1000 }}>
-              <Card.Body className="main">
+              </Card>
+            </Col>
+            </Zoom>
+        </CardDeck>
+            </Row>
+            <Row className="justify-content-md-center">
+        <CardDeck className='card-deck'>
+          <Zoom cascade>
+            <Col xs="12" lg="12">
+              <Card border='primary' style={{ height: "100%", width: "100%" }}>
+                <Card.Body className="main">
                 <Card.Title className='title'> {t("hotel")} </Card.Title>
                 <Card.Text className={i18n.language === "ar" ? "text-right" : "text-left"}>
                   {t("hoteltext")}
                 </Card.Text>
                 <Card.Img style={{ height: 550, width: 900 }} variant="top" src="./elmedina.png" />
               </Card.Body>
-            </Card>
-          </Col>
-
-          <Col style={{ marginBottom: '40px', marginLeft: '120px' }}>
-            <Card border='primary' style={{ height: 1000, width: 1000 }}>
-              <Card.Body className="main">
+              </Card>
+            </Col>
+            </Zoom>
+        </CardDeck>
+            </Row>
+            <Row className="justify-content-md-center">
+        <CardDeck className='card-deck'>
+          <Zoom cascade>
+            <Col xs="12" lg="12">
+              <Card border='primary' style={{ height: "100%", width: "100%" }}>
+                <Card.Body className="main">
                 <Card.Title className='title'>{t("mouradi")} </Card.Title>
                 <Card.Text className={i18n.language === "ar" ? "text-right" : "text-left"}>
                 {t("mouraditext")}
                 </Card.Text>
                 <Card.Img style={{ height: 550, width: 900 }} variant="top" src="./elmenzah.png" />
               </Card.Body>
-            </Card>
-          </Col>
-
-          <Col style={{ marginBottom: '40px', marginLeft: '120px' }}>
-            <Card border='primary' style={{ height: 900, width: 1000 }}>
-              <Card.Body className="main">
+              </Card>
+            </Col>
+            </Zoom>
+        </CardDeck>
+            </Row>
+           < Row className="justify-content-md-center">
+        <CardDeck className='card-deck'>
+          <Zoom cascade>
+            <Col xs="12" lg="12">
+              <Card border='primary' style={{ height: "100%", width: "100%" }}>
+                 <Card.Body className="main">
                 <Card.Title className='title'>{t("manzah")}</Card.Title>
                 <Card.Text className={i18n.language === "ar" ? "text-right" : "text-left"}>
                  {t("manzahtext")}
                 </Card.Text>
                 <Card.Img style={{ height: 550, width: 900 }} variant="top" src="./hammamet.png" />
               </Card.Body>
-            </Card>
-          </Col>
-
+              </Card>
+            </Col>
+            </Zoom>
         </CardDeck>
-      </Row>
+            </Row>
+            
+
+     
+
+        
     </Container>
   )
 }

@@ -1,8 +1,9 @@
 import React from "react";
 
+
 function Footer1() {
   return (
-    <div className="container-fluid" style={{ position: "relative" ,margin:0,padding:0}}>
+    <div className="container-fluid" style={{ position: "relative" ,margin:0,padding:0,zIndex:2}}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 280"
@@ -34,9 +35,14 @@ function Footer1() {
             style={{ backgroundColor: "#0099FF", color: "white",margin:0 }}
           >
             <div className="flex-column mt-5">
-              <div>jap23@cnot.org.tn</div>
-              <div>Tel: +216 71 767 681 | Fax: +216 71 767 289</div>
-              <div>
+              <div style={{
+                fontFamily:'Tropican'
+
+              }}>jap23@cnot.org.tn</div>
+              <div style={{
+                fontFamily:'Tropican'}}>Tel: +216 71 767 681 | Fax: +216 71 767 289</div>
+              <div style={{
+                fontFamily:'Tropican'}}>
                 Centre Culturel et sportif de la Jeunesse El MEnzah VI -2091
                 Tunis
               </div>
@@ -44,7 +50,7 @@ function Footer1() {
           </div>
         </div>
 
-        <div className="col-md-4 d-flex justify-content-center align-content-center"style={{ backgroundColor: "#0099FF", color: "white",margin:0 }}>
+        <div className="col-md-4 d-flex justify-content-center align-content-center"style={{ backgroundColor: "#0099FF", color: "white",margin:0 , width:"100%"}}>
         <div className="d-flex justify-content-center align-content-center align-items-center">
               <a
                 href="https://www.facebook.com/CNOTunisie"

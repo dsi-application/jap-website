@@ -69,10 +69,10 @@ const Acit2 = (props) => {
                   <br /> <br />
                   <iframe
                     maxWidth="100%"
-                    width="700"
+                    width="100%"
                     height="500"
                     position="relative"
-                    left="80px"
+                    //left="80px"
                     src="./chefsmission.mp4"
                     title="conference"
                     frameBorder="0"

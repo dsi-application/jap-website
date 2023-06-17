@@ -41,7 +41,32 @@ const Layout = () => {
           <Loading />
         </div>
       ) : (
-       
+        <div>
+        <div 
+        style={{
+        //  backgroundImage:"url('/src/background-logo.png')",
+        //  backgroundSize: 'cover',
+        //  backgroundPosition: 'center',
+         width: '100%',
+         height: '120vh',
+         position: 'fixed',
+         zIndex:'-1',
+         display: 'flex',
+         overflow: 'hidden',
+         justifyContent: 'center',
+         alignItems: 'center',
+         //animation: 'water 5s ease-in-out infinite',
+     }}
+        
+        >
+        <img src="./background-logo.png" style={{
+        //  backgroundImage:"url('/src/background-logo.png')",
+        //  backgroundSize: 'cover',
+        //  backgroundPosition: 'center',
+         width: '100%',
+         height: '120vh',}} alt="logo" />
+ 
+        </div>
         <Router>
           <Header />
           <Switch>
@@ -66,6 +91,7 @@ const Layout = () => {
           </Switch>
           <Footer1 />
         </Router>
+        </div>
   
       )}
    

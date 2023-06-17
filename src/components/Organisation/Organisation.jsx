@@ -101,8 +101,10 @@ const Organisation = () => {
                           <div>
                            
                             <Col style={{ textAlign: "-webkit-center" }}>
-                              <Card style={{ width: "46rem" }}>
+
+                              <Card style={{ width: "100%" }}>
                               <Card.Text className=" text-left"> {t("haut")}  </Card.Text>
+
                                 <Card.Img variant="top" src="./haut.jpg"/>
                               </Card>
                             </Col>
@@ -112,8 +114,10 @@ const Organisation = () => {
                           <div>
                            
                             <Col style={{ textAlign: "-webkit-center" }}>
-                              <Card style={{ width: "46rem" }}>
+
+                              <Card style={{ width: "100%" }}>
                               <Card.Text className=" text-left">  {t("commissions")} </Card.Text>
+
                                 <Card.Img variant="top" src="./commissions.jpg"/>
                               </Card>
                             </Col>

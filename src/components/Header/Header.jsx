@@ -143,7 +143,7 @@ const Header = () => {
                 {t("media")}
                 </Nav.Link>
               </LinkContainer>
-              <Form className=''>
+              <Form className='mr-2'>
             <FormGroup  className="">
               {/* <Label for="LanguageSelect">Language :</Label> */}
               <Input id="languageSelect" name="select" type="select" onChange={changeLanguage} >
