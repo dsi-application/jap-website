@@ -75,7 +75,9 @@ const Organisation = () => {
                            
                             <Col style={{ textAlign: "-webkit-center" }}>
                               <Card style={{ width: "100%" }}>
+
                               <Card.Text className=" text-left">    {t("prop")}      </Card.Text>
+
 
                     
                                 <Card.Img variant="top" src="./comite.jpg"/>
