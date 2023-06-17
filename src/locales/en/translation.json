@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
  "jbc":"Low carbone games :",
  "lja":"The 2023 All-Africa Beach Games make a commitment to the climate with sobriety, innovation and boldness. The CNOT sets a new environmental standard and JAP23 plays a major role in the fight against climate change. Five concrete actions are planned for the JAP.",
  "dls":"Declare JAP week, from June 23 to 30, 2023, a plastic-free week throughout the Yasmine Hammamet area. By dedicating the means for its application.",
@@ -10,5 +11,26 @@
  "sde":"Our partners are always there to support us."
 
 
+=======
+
+    "Dec" :"Discover our selection of sports competitions, ranging from major events to local events, on our sports showcase site, designed for sports enthusiasts around the world.",
+    "bienvenue" : "Welcome to our sports showcase website where you can discover our collection of sports competitions, from world-class events to local events.",
+    "here" : "We are here to support you and help you identify your needs in terms of qualified training, by connecting companies that can benefit from your improved skills.",
+    "home" : "Home",
+    "hist" : "History",
+    "event" : "Past events",
+    "organisation" :"Organisation",
+    "calender" : "Calender",
+    "competition" : " Competition",
+    "site" : "The sites (venues)",
+    "comp" : "The competition site",
+    "village" : "The athletes' village",
+    "media" : "Media Library",
+    "news" : "News",
+    "about" : "About",
+    "athlete" : "Athletes",
+    "tot": "Total number of participating countries",
+    "sport" :"Total number of sports"
+>>>>>>> 242d3928271ea073db40cae637a44fc7f2a1e8fd
 
 }

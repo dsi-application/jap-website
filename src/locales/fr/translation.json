@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "jbc": "Jeux bas carbone :",
     "lja":"Les Jeux Africains de plage 2023 s'engagent pour le climat avec sobriété, innovation et audace. Le CNOT établit un nouveau standard environnemental et JAP23 joue un rôle majeur dans la lutte contre les changements climatiques. Cinq actions concrètes sont prévues lors des JAP.",
     "dls":"Décréter la semaine JAP, du 23 au 30 juin 2023, semaine sans plastique dans toute la zone Yasmine Hammamet. En consacrant les moyens de son application.",
@@ -8,4 +9,27 @@
     "lcf":"Les calèches facilitent la mobilité des VIP et des responsables d'équipes entre les hôtels et le site de compétition, tandis que les athlètes se déplacent à pied entre leurs hôtels et le site d'entraînement et de compétition.",
     "sectionTitle":"Nos Partenaires",
     "sde":"Nos partenaires sont toujours là pour nous accompagner."
+=======
+
+   "Dec" : "Découvrez notre sélection de compétitions sportives, allant des événements majeurs aux événements locaux, sur notre site vitrine de sport, conçu pour les passionnés de sport du monde entier.",
+   "bienvenue" : "Bienvenue sur notre site vitrine de sport où vous pouvez découvrir notre collection de compétitions sportives, des événements de classe mondiale aux événements locaux",
+   "here" : "Nous sommes là pour vous accompagner et vous aider à identifier vos besoins en matière de formation qualifiée,en mettant en relation les entreprises qui peuvent bénéficier de vos compétences améliorées.",
+   "home" : "Acceuil",
+   "hist" : "Historique",
+   "event": "Événements passés",
+   "organisation" : "Organisation",
+   "calender" : "Calendrier",
+   "competition":" Competition",
+   "site" : "Les sites (venues)",
+   "comp" : "Le site de compétition",
+   "village" : "Le village des athlètes",
+   "media" : "  Médiathèque",
+   "news": "Actualités",
+   "about":"À propos",
+   "athlete" : "Athlètes",
+   "tot": "Nombre total de pays participants",
+   "sport" :"Nombre total de sports"
+
+
+>>>>>>> 242d3928271ea073db40cae637a44fc7f2a1e8fd
 }
