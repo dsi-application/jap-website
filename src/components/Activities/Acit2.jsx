@@ -4,12 +4,12 @@ import ScrollAnimation from "react-animate-on-scroll";
 import { MDBContainer, MDBRow } from "mdbreact";
 import Lightbox from "react-image-lightbox";
 import { Icon, InlineIcon } from '@iconify/react';
-import { useTranslation } from "react-i18next";
+import { I18nextProvider, useTranslation } from 'react-i18next';
 
 const Acit2 = (props) => {
   const [photoIndex, setPhotoIndex] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
-  const { t } = useTranslation();
+  const { t,i18n } = useTranslation();
   const images = [
     "./a300.jpg",
     "./a301.jpg",
@@ -80,7 +80,7 @@ const Acit2 = (props) => {
                     allowFullScreen
                   ></iframe>
                   <br /> <br />
-                  <h6 className=" text-left">{t("sites")}  <br />        <br />
+                  <h6 className={i18n.language === "ar" ? "text-right" : "text-left"}>{t("sites")}  <br />        <br />
                    {t("sites1")}  <br />        <br />
                   {t("sites2")}
                     <br /> <br />   {t("arena1")} 

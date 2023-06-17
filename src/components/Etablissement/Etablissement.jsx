@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import ReactPlayer from "react-player";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import { useTranslation } from "react-i18next";
+import { I18nextProvider, useTranslation } from 'react-i18next';
 
 import {
     Col,
@@ -17,7 +17,7 @@ import { Icon, InlineIcon } from '@iconify/react';
 import './etablissement.css'
 
 const Etablissement = () => {
-  const { t } = useTranslation();
+  const { t,i18n } = useTranslation();
 
     const reactPlayerRef = useRef();
 
@@ -28,11 +28,11 @@ const Etablissement = () => {
                     
 
                       <MDBCol  md="12" lg="12" xl="12"  className="mb-4 dark-grey-text">
-                      <h6  style={{ color: '#D40054'}} className="text">
+                      <h6  style={{ color: '#D40054'}} className={i18n.language === "ar" ? "text-right" : "text-left"}>
 
                       <InlineIcon icon="mdi:pillar"  width="30" height="30" inline={false} /> {t("hist")}
 </h6>
-                          <h6  style={{ color: '#000000'}} className="text">
+                          <h6  style={{ color: '#000000'}} className={i18n.language === "ar" ? "text-right" : "text-left"}>
 
                           <br/> <br/>
                           {t("jap")}
@@ -41,11 +41,11 @@ const Etablissement = () => {
                           </h6>
 
                         <br/> <br/>
-                        <h6  style={{ color: '#D40054'}} className="text">
+                        <h6  style={{ color: '#D40054'}} className={i18n.language === "ar" ? "text-right" : "text-left"}>
 
                         <InlineIcon icon="mdi:calendar-star"  width="30" height="30" inline={false} /> {t("presentation")}
 </h6>
-                        <h6  style={{ color: '#000000'}} className="text">
+                        <h6  style={{ color: '#000000'}} className={i18n.language === "ar" ? "text-right" : "text-left"}>
                           <br/> <br/>
                           {t("capvert")}
                           <br/> <br/>
@@ -79,7 +79,7 @@ const Etablissement = () => {
                       </MDBCol>
                       <iframe maxWidth="100%" width="100%"  height="500"   position= "relative"  
                        src="./presentation.mp4" title="conference" frameborder="0" 
-                         allow="autoplay; encrypted-media " 
+                         allow=" encrypted-media " 
                      allowfullscreen>
                      </iframe>
                   </MDBRow>
