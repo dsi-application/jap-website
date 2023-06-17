@@ -32,7 +32,12 @@ const slider = [
         image: "./wrestling.jpg",
     },
     
-
+    {
+        title: "",
+        description: "",
+        
+        image: "./slide1.png",
+    },
    
    
 ];
