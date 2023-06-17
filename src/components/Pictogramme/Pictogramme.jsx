@@ -86,72 +86,72 @@ Pictogramme.defaultProps = {
     sectionDescription: "",
     partnersData: [
         {
-            partnerLogo:   "./PICTOGRAMME-JAP-1.JPG" ,  
+            partnerLogo:   "./PICTOGRAMME-JAP-1.png" ,  
         
         },
        
         {
-            partnerLogo:   "./PICTOGRAMME-JAP-2.JPG" ,  
+            partnerLogo:   "./PICTOGRAMME-JAP-2.png" ,  
         
         },
 
         {
-            partnerLogo:   "./PICTOGRAMME-JAP-3.JPG" ,  
+            partnerLogo:   "./PICTOGRAMME-JAP-3.png" ,  
         
         },
 
         {
-            partnerLogo:   "./PICTOGRAMME-JAP-4.JPG" ,  
+            partnerLogo:   "./PICTOGRAMME-JAP-4.png" ,  
         
         },
 
         {
-            partnerLogo:   "./PICTOGRAMME-JAP-5.JPG" ,  
+            partnerLogo:   "./PICTOGRAMME-JAP-5.png" ,  
         
         },
 
         {
-            partnerLogo:   "./PICTOGRAMME-JAP-6.JPG" ,  
+            partnerLogo:   "./PICTOGRAMME-JAP-6.png" ,  
         
         },
 
         {
-            partnerLogo:   "./PICTOGRAMME-JAP-7.JPG" ,  
+            partnerLogo:   "./PICTOGRAMME-JAP-7.png" ,  
         
         },
 
         {
-            partnerLogo:   "./PICTOGRAMME-JAP-8.JPG" ,  
+            partnerLogo:   "./PICTOGRAMME-JAP-8.png" ,  
         
         },
 
         {
-            partnerLogo:   "./PICTOGRAMME-JAP-9.JPG" ,  
+            partnerLogo:   "./PICTOGRAMME-JAP-9.png" ,  
         
         },
 
         {
-            partnerLogo:   "./PICTOGRAMME-JAP-10.JPG" ,  
+            partnerLogo:   "./PICTOGRAMME-JAP-10.png" ,  
         
         },
 
         {
-            partnerLogo:   "./PICTOGRAMME-JAP-11.JPG" ,  
+            partnerLogo:   "./PICTOGRAMME-JAP-11.png" ,  
         
         },
 
         {
-            partnerLogo:   "./PICTOGRAMME-JAP-12.JPG" ,  
+            partnerLogo:   "./PICTOGRAMME-JAP-12.png" ,  
         
         },
 
         {
-            partnerLogo:   "./PICTOGRAMME-JAP-13.JPG" ,  
+            partnerLogo:   "./PICTOGRAMME-JAP-13.png" ,  
         
         },
 
         {
-            partnerLogo:   "./PICTOGRAMME-JAP-14.JPG" ,  
+            partnerLogo:   "./PICTOGRAMME-JAP-14.png" ,  
         
         },
      

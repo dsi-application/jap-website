@@ -51,6 +51,7 @@ const Video = () => {
                       
                         {/* <Image width="500px" src="/badge-logo.png" style={{ marginTop: '-1px' }} /> */}
 
+                        <Image width="500px" src="/poster.jpg"  />
 
     
                         </MDBCol>
