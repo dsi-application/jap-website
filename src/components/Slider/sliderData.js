@@ -4,45 +4,40 @@ const slider = [
         title: "",
         description: "",
         
-        image: "./slide3.png",
+        image: "./header.png",
     },
-
     {
         title: "",
         description: "",
         
-        image: "./slide2.png",
+        image: "./beach.jpg",
     },
-
     {
         title: "",
         description: "",
         
-        image: "./slide4.png",
+        image: "./TEQ07514.jpg",
     },
-
     {
         title: "",
         description: "",
         
-        image: "./SIMULATION-2-_1920x900.jpg",
-
+        image: "./Jeux-africains-de-plage-2023 .jpg",
     },
 
+  {
+        title: "",
+        description: "",
+        
+        image: "./wrestling.jpg",
+    },
+    
     {
         title: "",
         description: "",
         
-        image: "./SIMULATION-4-_1920x900.jpg",
+        image: "./slide1.png",
     },
-
-    {
-        title: "",
-        description: "",
-        
-        image: "./SIMULATION-7-.png",
-    }
-
    
    
 ];

@@ -4,11 +4,12 @@ import ScrollAnimation from "react-animate-on-scroll";
 import { MDBContainer, MDBRow } from "mdbreact";
 import Lightbox from "react-image-lightbox";
 import { Icon, InlineIcon } from '@iconify/react';
+import { useTranslation } from "react-i18next";
 
 const Acit2 = (props) => {
   const [photoIndex, setPhotoIndex] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
-
+  const { t } = useTranslation();
   const images = [
     "./a300.jpg",
     "./a301.jpg",
@@ -68,10 +69,10 @@ const Acit2 = (props) => {
                   <br /> <br />
                   <iframe
                     maxWidth="100%"
-                    width="700"
+                    width="100%"
                     height="500"
                     position="relative"
-                    left="80px"
+                    //left="80px"
                     src="./chefsmission.mp4"
                     title="conference"
                     frameBorder="0"
@@ -79,25 +80,24 @@ const Acit2 = (props) => {
                     allowFullScreen
                   ></iframe>
                   <br /> <br />
-                  <h6 className=" text-left">Le site des compétitions est situé sur une plage longue de 500 mètres en face des hôtels de Yasmine Hammamet  <br />        <br />
-                    et longée par une esplanade qui conduit jusqu’à la Marina de la station.
-                    La plage est divisée en deux zones : une zone abritant les terrains d’entrainements et une zone où   <br />        <br />
-                    sont aménagés les terrains de compétitions. Ces terrains sont répartis en 8 arènes :
-                    <br /> <br />   Arène 1 : Beach Handball & Beach Soccer
-                    <br />  <br />   Arène 2 : Beach Volley 4x4 & Beach Tennis
-                    <br />  <br />  Arène 3 : Basket 3x3
-                    <br />  <br />  Arène 4 : Beach Rugby
-                    <br />  <br />  Arène 5 : Beach Football
-                    <br />  <br />  Arène 6 : Beach Wrestling
-                    <br />  <br />  Arène 7 : Beach Karaté & Beach Judo
-                    <br />  <br />  Arène 8 : Kitesurf
+                  <h6 className=" text-left">{t("sites")}  <br />        <br />
+                   {t("sites1")}  <br />        <br />
+                  {t("sites2")}
+                    <br /> <br />   {t("arena1")} 
+                    <br />  <br />   {t("arena2")} 
+                    <br />  <br />  {t("arena3")}
+                    <br />  <br />  {t("arena4")}
+                    <br />  <br />  {t("arena5")}
+                    <br />  <br />  {t("arena6")}
+                    <br />  <br />  {t("arena7")}
+                    <br />  <br />  {t("arena8")}
                     <br />  <br /> <br /> <br />  </h6>
                 </div>
               </ScrollAnimation>
             </div>
           </div>
           <MDBContainer>
-            <MDBRow>
+            {/* <MDBRow>
               {images.map((image, index) => (
                 <div className="col-md-4" key={index}>
                   <ScrollAnimation animateIn="fadeInUp">
@@ -116,9 +116,9 @@ const Acit2 = (props) => {
                   </ScrollAnimation>
                 </div>
               ))}
-            </MDBRow>
+            </MDBRow> */}
           </MDBContainer>
-          {isOpen && (
+          {/* {isOpen && (
             <Lightbox
               mainSrc={images[photoIndex]}
               nextSrc={images[(photoIndex + 1) % images.length]}
@@ -127,7 +127,7 @@ const Acit2 = (props) => {
               onMovePrevRequest={movePrev}
               onMoveNextRequest={moveNext}
             />
-          )}
+          )} */}
         </div>
       </section>
     </React.Fragment>

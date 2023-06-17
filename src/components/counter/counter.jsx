@@ -1,8 +1,9 @@
 import React from 'react';
 import './style.css';
 import CountUp from 'react-countup';
-
+import { useTranslation } from "react-i18next";
 const Counter = () => {
+  const { t } = useTranslation();
   return (
     <div>
       {/* CSS imports */}
@@ -35,7 +36,7 @@ const Counter = () => {
                           <span className="counter-value" ref={countUpRef} />
                         )}
                       </CountUp>
-                      <h3>Athlètes</h3>
+                      <h3>{t("athlete")}</h3>
                       <i className="fas fa-swimmer counter-icon" style={{ color: '#001689' }}></i>
                     </div>
                   </div>
@@ -46,7 +47,7 @@ const Counter = () => {
                           <span className="counter-value" ref={countUpRef} />
                         )}
                       </CountUp>
-                      <h3>Nombre total de pays participants</h3>
+                      <h3>{t("tot")}</h3>
                       <i className="fas fa-globe-africa counter-icon" style={{ color: '#FDE021' }}></i>
                     </div>
                   </div>
@@ -57,7 +58,7 @@ const Counter = () => {
                           <span className="counter-value" ref={countUpRef} />
                         )}
                       </CountUp>
-                      <h3>Nombre total de sports</h3>
+                      <h3>{t("sport")}</h3>
                       <i className="fas fa-volleyball-ball counter-icon" style={{ color: '#00B451' }} ></i>
                     </div>
                   </div>

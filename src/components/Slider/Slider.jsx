@@ -25,7 +25,7 @@ const SliderComponent = () => {
               className="slider-content"
               style={{ background: `url('${item.image}') no-repeat center center` }}
               width="1920px"
-              height="900px"
+              height="1500px"
             >
               <div className="inner">
                 <h1>{item.title}</h1>

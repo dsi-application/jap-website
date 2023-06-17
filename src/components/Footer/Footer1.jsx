@@ -1,8 +1,10 @@
 import React from "react";
+import { InlineIcon } from '@iconify/react'; // For general icons
+import './Footer1.css'
 
 function Footer1() {
   return (
-    <div className="container-fluid" style={{ position: "relative" ,margin:0,padding:0}}>
+    <div className="container-fluid" style={{ position: "relative" ,margin:0,padding:0,zIndex:2}}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 280"
@@ -33,18 +35,23 @@ function Footer1() {
             className="d-flex flex-column justify-content-center"
             style={{ backgroundColor: "#0099FF", color: "white",margin:0 }}
           >
-            <div className="flex-column mt-5">
-              <div>jap23@cnot.org.tn</div>
-              <div>Tel: +216 71 767 681 | Fax: +216 71 767 289</div>
-              <div>
-                Centre Culturel et sportif de la Jeunesse El MEnzah VI -2091
-                Tunis
-              </div>
-            </div>
+     <div className="flex-column mt-5">
+  <div style={{ fontFamily: 'Tropican', fontSize: '15px' }}>
+    <InlineIcon icon="mdi:email" width="30" height="30" inline={false} /> jap23@cnot.org.tn
+  </div>
+  <div style={{ fontFamily: 'Tropican', fontSize: '15px' }}>
+    <InlineIcon icon="mdi:phone" width="30" height="30" inline={false} /> Tel: +216 71 767 681 | Fax: +216 71 767 289
+  </div>
+  <div style={{ fontFamily: 'Tropican', fontSize: '15px' }}>
+    <InlineIcon icon="mdi:map-marker" width="30" height="30" inline={false} /> Centre Culturel et sportif de la Jeunesse El MEnzah VI -2091 Tunis
+  </div>
+</div>
+
+            
           </div>
         </div>
 
-        <div className="col-md-4 d-flex justify-content-center align-content-center"style={{ backgroundColor: "#0099FF", color: "white",margin:0 }}>
+        <div className="col-md-4 d-flex justify-content-center align-content-center"style={{ backgroundColor: "#0099FF", color: "white",margin:0 , width:"100%"}}>
         <div className="d-flex justify-content-center align-content-center align-items-center">
               <a
                 href="https://www.facebook.com/CNOTunisie"
