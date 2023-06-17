@@ -14,7 +14,7 @@ import {
 
 const Acit1 = () => {
   const reactPlayerRef = useRef();
-  const { t } = useTranslation();
+  const {t,i18n} = useTranslation();
 
   return (
     <Container className="main center" fluid>
@@ -29,7 +29,7 @@ const Acit1 = () => {
             <Card border='primary' style={{ height: 950, width: 1000 }}>
               <Card.Body className="main">
                 <Card.Title className='title'> {t('acti1')} </Card.Title>
-                <Card.Text className="text-left">
+                <Card.Text className={i18n.language === "ar" ? "text-right" : "text-left"}>
                   {t('acti1text')}
                 </Card.Text>
                 <Card.Img style={{ height: 550, width: 900 }} variant="top" src="./parc.png" />
@@ -41,7 +41,7 @@ const Acit1 = () => {
             <Card border='primary' style={{ height: 900, width: 1000 }}>
               <Card.Body className="main">
                 <Card.Title className='title'> {t("hotel")} </Card.Title>
-                <Card.Text className="text-left">
+                <Card.Text className={i18n.language === "ar" ? "text-right" : "text-left"}>
                   {t("hoteltext")}
                 </Card.Text>
                 <Card.Img style={{ height: 550, width: 900 }} variant="top" src="./elmedina.png" />
@@ -53,7 +53,7 @@ const Acit1 = () => {
             <Card border='primary' style={{ height: 1000, width: 1000 }}>
               <Card.Body className="main">
                 <Card.Title className='title'>{t("mouradi")} </Card.Title>
-                <Card.Text className="text-left">
+                <Card.Text className={i18n.language === "ar" ? "text-right" : "text-left"}>
                 {t("mouraditext")}
                 </Card.Text>
                 <Card.Img style={{ height: 550, width: 900 }} variant="top" src="./elmenzah.png" />
@@ -65,7 +65,7 @@ const Acit1 = () => {
             <Card border='primary' style={{ height: 900, width: 1000 }}>
               <Card.Body className="main">
                 <Card.Title className='title'>{t("manzah")}</Card.Title>
-                <Card.Text className="text-left">
+                <Card.Text className={i18n.language === "ar" ? "text-right" : "text-left"}>
                  {t("manzahtext")}
                 </Card.Text>
                 <Card.Img style={{ height: 550, width: 900 }} variant="top" src="./hammamet.png" />
