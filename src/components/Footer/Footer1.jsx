@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer1() {
   return (
-    <div className="container-fluid" style={{ position: "relative" ,margin:0,padding:0}}>
+    <div className="container-fluid" style={{ position: "relative" ,margin:0,padding:0,zIndex:2}}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 280"
@@ -44,7 +44,7 @@ function Footer1() {
           </div>
         </div>
 
-        <div className="col-md-4 d-flex justify-content-center align-content-center"style={{ backgroundColor: "#0099FF", color: "white",margin:0 }}>
+        <div className="col-md-4 d-flex justify-content-center align-content-center"style={{ backgroundColor: "#0099FF", color: "white",margin:0 , width:"100%"}}>
         <div className="d-flex justify-content-center align-content-center align-items-center">
               <a
                 href="https://www.facebook.com/CNOTunisie"

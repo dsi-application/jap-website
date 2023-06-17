@@ -5,6 +5,7 @@
     /* @apply text-zinc-300; */
     min-width: 100%;
     overflow: hidden;
+    
   }
   html {
     min-height: 100%;
@@ -21,3 +22,11 @@
   #root {
     height: 100%;
   }
+  /* .App{
+    background-image: url('/src/background-logo.png');
+  	background-repeat: no-repeat;
+    background-size: cover;
+  } */
+  /* .main {
+    background-color: transparent !important;
+  } */

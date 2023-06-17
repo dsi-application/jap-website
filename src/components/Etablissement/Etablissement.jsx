@@ -25,7 +25,7 @@ const Etablissement = () => {
                   <MDBRow className="mt-2">
                     
                       
-                      <MDBCol md="3" lg="3" xl="6" className="mb-4 dark-grey-text">
+                      <MDBCol md="12" lg="12" xl="12" className="mb-1 dark-grey-text">
                       
                       
                           <h6  style={{ color: '#78c2ad'}} className="font-weight-bold">
@@ -70,14 +70,15 @@ const Etablissement = () => {
                       
 
 
-                     <iframe maxWidth="100%" width="700"  height="500"   position= "relative"  left="80px"
+                    
+
+  
+                      </MDBCol>
+                      <iframe maxWidth="100%" width="100%"  height="500"   position= "relative"  
                        src="./presentation.mp4" title="conference" frameborder="0" 
                          allow="autoplay; encrypted-media " 
                      allowfullscreen>
                      </iframe>
-
-  
-                      </MDBCol>
                   </MDBRow>
               </MDBContainer>
 

@@ -59,8 +59,8 @@ Cette première édition regroupa 42 Comités Nationaux Olympiques africains.
  <br/> <br/>
                     <MDBRow className="mt-2">
                     <MDBCol md="3" lg="3" xl="6" className="mb-4 dark-grey-text">
-                        <Card style={{ width: '35rem' , height: '30rem' }}>
-        <Card.Img  style={{ width: '35rem' , height: '20rem' }}  variant="top" src="./cap01.png" />
+                        <Card style={{ width: '100%' , height: '30rem' }}>
+        <Card.Img  style={{ width: '100%' , height: '20rem' }}  variant="top" src="./cap01.png" />
         <Card.Body>
           <Card.Title>Doha2019</Card.Title>
           <a href="https://www.anocolympic.org/anoc-world-beach-games/anoc-world-beach-games-qatar-2019/">
@@ -70,8 +70,8 @@ Cette première édition regroupa 42 Comités Nationaux Olympiques africains.
   
       </MDBCol>
                 <MDBCol md="3" lg="3" xl="6" className="mb-4 dark-grey-text">
-                <Card style={{ width: '35rem' , height: '30rem' }}>
-        <Card.Img style={{ width: '35rem' , height: '20rem' }} variant="top" src="./cap02.png" />
+                <Card style={{ width: '100%' , height: '30rem' }}>
+        <Card.Img style={{ width: '100%' , height: '20rem' }} variant="top" src="./cap02.png" />
         <Card.Body>
           <Card.Title> Bali 2023 </Card.Title>
           <a href=" https://www.anocworldbeachgames.com/">
