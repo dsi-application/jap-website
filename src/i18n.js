@@ -17,11 +17,7 @@ import  arTranslation from './locales/ar/translation.json'
     .use(Backend)
   .init({
     lng: 'fr', // default language
-<<<<<<< HEAD
-    fallbackLng: 'fr', // fallback language if the detected language is not available
-=======
     fallbackLng: 'en', // fallback language if the detected language is not available
->>>>>>> 242d3928271ea073db40cae637a44fc7f2a1e8fd
     resources: {
       en: { translation: enTranslation },
       fr: { translation: frTranslation },
