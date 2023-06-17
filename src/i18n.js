@@ -4,6 +4,7 @@ import Backend from 'i18next-http-backend';
 import LanguageDetector from 'i18next-browser-languagedetector';
 import enTranslation from './locales/en/translation.json';
 import frTranslation from './locales/fr/translation.json';
+import  arTranslation from './locales/ar/translation.json'
 
 // the translations
 // (tip move them in a JSON file and import them,
@@ -15,11 +16,12 @@ import frTranslation from './locales/fr/translation.json';
     .use(LanguageDetector)
     .use(Backend)
   .init({
-    lng: 'en', // default language
+    lng: 'fr', // default language
     fallbackLng: 'en', // fallback language if the detected language is not available
     resources: {
       en: { translation: enTranslation },
       fr: { translation: frTranslation },
+      ar:{translation: arTranslation}
     },
   });
   export default i18n;
