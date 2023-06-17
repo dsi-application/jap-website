@@ -29,7 +29,7 @@ const Video = () => {
                     <MDBRow className="mt-2">
                       
                         
-                        <MDBCol md="3" lg="3" xl="6" className="mb-4 dark-grey-text">
+                        <MDBCol md="6" lg="3" xl="6" className="mb-4 dark-grey-text">
                         
                             <h6 className="text">
                             <InlineIcon icon="mdi:certificate"  width="30" height="30" inline={false} /> {t("bienvenue")}  </h6>
@@ -46,7 +46,7 @@ const Video = () => {
                         <InlineIcon icon="mdi:home-city-outline"  width="30" height="30" inline={false} />   {t("here")}   </h6>
 
                         </MDBCol>
-                        <MDBCol md="3" lg="5" xl="6" className="mb-4 dark-grey-text">
+                        <MDBCol md="6" lg="5" xl="6" className="mb-4 dark-grey-text">
                         <br/> 
                       
                         {/* <Image width="500px" src="/badge-logo.png" style={{ marginTop: '-1px' }} /> */}
