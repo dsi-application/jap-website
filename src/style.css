@@ -10,6 +10,9 @@
     min-height: 100%;
     margin: 0;
   }
+  .App{
+    height: 100vh;
+  }
   
   body {
     margin: 0;

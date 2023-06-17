@@ -9,15 +9,20 @@ import './bootstrap.min.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import i18n from "./i18n";
+import { Suspense } from "react";
 import { I18nextProvider } from "react-i18next";
 dotenv.config('./../.env');
 
 ReactDOM.render(
+  <Suspense fallback="loading">
+      <I18nextProvider i18n={i18n}>
   <Provider store={store}>
-       <I18nextProvider>
+     
     <App />
-    </I18nextProvider>
+    
   </Provider>,
+  </I18nextProvider>
+  </Suspense>,
   document.getElementById('root')
 );
 
