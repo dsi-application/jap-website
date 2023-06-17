@@ -83,8 +83,8 @@ const Acit2 = (props) => {
                   <h6 className=" text-left">{t("sites")}  <br />        <br />
                    {t("sites1")}  <br />        <br />
                   {t("sites2")}
-                    <br /> <br />   {t("arena1")}
-                    <br />  <br />   {t("arena2")}
+                    <br /> <br />   {t("arena1")} 
+                    <br />  <br />   {t("arena2")} 
                     <br />  <br />  {t("arena3")}
                     <br />  <br />  {t("arena4")}
                     <br />  <br />  {t("arena5")}
@@ -97,7 +97,7 @@ const Acit2 = (props) => {
             </div>
           </div>
           <MDBContainer>
-            <MDBRow>
+            {/* <MDBRow>
               {images.map((image, index) => (
                 <div className="col-md-4" key={index}>
                   <ScrollAnimation animateIn="fadeInUp">
@@ -116,9 +116,9 @@ const Acit2 = (props) => {
                   </ScrollAnimation>
                 </div>
               ))}
-            </MDBRow>
+            </MDBRow> */}
           </MDBContainer>
-          {isOpen && (
+          {/* {isOpen && (
             <Lightbox
               mainSrc={images[photoIndex]}
               nextSrc={images[(photoIndex + 1) % images.length]}
@@ -127,7 +127,7 @@ const Acit2 = (props) => {
               onMovePrevRequest={movePrev}
               onMoveNextRequest={moveNext}
             />
-          )}
+          )} */}
         </div>
       </section>
     </React.Fragment>

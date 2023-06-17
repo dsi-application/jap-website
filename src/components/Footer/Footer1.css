@@ -1,0 +1,6 @@
+@media (max-width: 768px) {
+    .flex-column div {
+      font-size: 12px;
+    }
+  }
+  
