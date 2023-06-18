@@ -68,7 +68,7 @@ const Header = () => {
           </Navbar.Brand>
         </LinkContainer>
 
-        <Container>
+        <Container >
           <Navbar.Toggle
              className="navbar-toggler"
             type="button"
@@ -84,7 +84,7 @@ const Header = () => {
 
           </Navbar.Toggle>
           <Navbar.Collapse id="navbarSupportedContent">
-            <Nav className="navbar navbar-expand-sm navbar-dark">
+            <Nav className="navbar  navbar-expand-sm navbar-dark" style={{justifyContent:"space-evenly"}}>
               <LinkContainer style={{ color: '#001689' }} to="/">
                 <Nav.Link className="nav-cal" onClick={closeNavbar}>
                  {t("home")}
@@ -143,8 +143,8 @@ const Header = () => {
                 {t("media")}
                 </Nav.Link>
               </LinkContainer>
-              <Form className='mr-2'>
-            <FormGroup  className="ml-4">
+              <Form className=''>
+            <FormGroup  className="">
               {/* <Label for="LanguageSelect">Language :</Label> */}
               <Input id="languageSelect" name="select" type="select" onChange={changeLanguage} >
                 <option value="en" className="lang">EN</option>

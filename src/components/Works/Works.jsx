@@ -42,7 +42,7 @@ const Works = () => {
                     <MDBRow className="mt-2">
                       
      
-                        <MDBCol md="3" lg="3" xl="6" className="mb-4 dark-grey-text">
+                        <MDBCol md="6" lg="6" xl="6" className="mb-4 dark-grey-text">
                         
                             <h6  className={i18n.language === "ar" ? "text-right" : "text-left"} >
                             {t('lja')}                            </h6>
@@ -78,7 +78,7 @@ const Works = () => {
 
 
                         </MDBCol>
-                        <MDBCol md="3" lg="4" xl="3" className="mb-4 dark-grey-text">
+                        <MDBCol md="3" lg="3" xl="3" className="mb-4 p-0 mx-0 dark-grey-text">
                         <br/><br/><br/><br/><br/><br/> 
                       
                         <div className="w-right">
