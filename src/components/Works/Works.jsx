@@ -19,7 +19,7 @@ import {
     Row,
     Image
 } from 'react-bootstrap'
-import { useTranslation } from 'react-i18next';
+import { useTranslation ,I18nextProvider } from 'react-i18next';
 
 
 
@@ -28,14 +28,14 @@ import { useTranslation } from 'react-i18next';
 const Works = () => {
 
     const reactPlayerRef = useRef();
-    const { t } = useTranslation();
+    const { t,i18n } = useTranslation();
 
 
     return (
       
         <Container className="main"  fluid>
    
-        <MDBContainer className="mt-5 mb-4 text-center text-md-left">
+        <MDBContainer className="mt-4 mb-4 text-center text-md-left">
         <h2  style={{ color: '#00B451'}} className="font-weight-bold  text-center">
      <InlineIcon icon="mdi:campfire"  width="50" height="50"  /> {t('jbc')}   </h2>
      <br/>
@@ -44,35 +44,35 @@ const Works = () => {
      
                         <MDBCol md="3" lg="3" xl="6" className="mb-4 dark-grey-text">
                         
-                            <h6  className="text" >
+                            <h6  className={i18n.language === "ar" ? "text-right" : "text-left"} >
                             {t('lja')}                            </h6>
 
                           <br/> 
 
-                          <h6  className="text">
+                          <h6  className={i18n.language === "ar" ? "text-right" : "text-left"}>
                             <InlineIcon icon="mdi:gamepad-round"  width="30" height="30" inline={false} /> {t('dls')}  </h6>
 
                           <br/> 
                         
 
-                         <h6 className="text" >
+                         <h6 className={i18n.language === "ar" ? "text-right" : "text-left"} >
                         <InlineIcon icon="mdi:gamepad-round-down"  width="30" height="30" inline={false} />   {t('elr')}   </h6>
 
                         <br/> 
                       
 
-                         <h6 className="text" >
+                         <h6 className={i18n.language === "ar" ? "text-right" : "text-left"} >
                         <InlineIcon icon="mdi:gamepad-round-left"  width="30" height="30" inline={false} />   {t('etl')} </h6>
 
                         <br/> 
              
-                         <h6  className="text" >
+                         <h6 className={i18n.language === "ar" ? "text-right" : "text-left"} >
                         <InlineIcon icon="mdi:gamepad-round-right"  width="30" height="30" inline={false} />   {t('rult')}   </h6>
 
                         <br/> 
                        
 
-                         <h6  className="text" >
+                         <h6  className={i18n.language === "ar" ? "text-right" : "text-left"} >
                         <InlineIcon icon="mdi:gamepad-round-up"  width="30" height="30" inline={false} /> 
                         {t('lcf')}   </h6>
 

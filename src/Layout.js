@@ -55,7 +55,7 @@ const Layout = () => {
          overflow: 'hidden',
          justifyContent: 'center',
          alignItems: 'center',
-         //animation: 'water 5s ease-in-out infinite',
+         animation: 'water 5s ease-in-out infinite',
      }}
         
         >

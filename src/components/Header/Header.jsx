@@ -144,7 +144,7 @@ const Header = () => {
                 </Nav.Link>
               </LinkContainer>
               <Form className='mr-2'>
-            <FormGroup  className="">
+            <FormGroup  className="ml-4">
               {/* <Label for="LanguageSelect">Language :</Label> */}
               <Input id="languageSelect" name="select" type="select" onChange={changeLanguage} >
                 <option value="en" className="lang">EN</option>
