@@ -14,6 +14,7 @@ const SliderComponent = () => {
     setSlider(data);
   }, []);
 
+
   return (
     <>
     
