@@ -71,7 +71,12 @@
    "arena5" :"Arène 5 : Beach Football",
    "arena6" :"Arène 6 : Beach Wrestling",
    "arena7" :"Arène 7 : Beach Karaté & Beach Judo",
-   "arena8" :"Arène 8 : Kitesurf"
+   "arena8" :"Arène 8 : Kitesurf",
+   "events": "Événements",
+   "firstEdition": "1ère édition des JAP, Sal (Cap Vert) 2019",
+   "salDescription": "Environ 886 sportifs dont 416 athlètes féminines se sont affrontés en juin 2019 dans les 11 disciplines au programme de la première édition des Jeux Africains de Plage : l'athlétisme, le basketball 3x3, Beach Handball, le Beach soccer, le beach tennis, le beach volley-ball, l'aviron de mer, Freestyle football, le karaté Kata, le Kiteboarding, la natation en eaux libres. Cette première édition a regroupé 42 Comités Nationaux Olympiques africains.",
+   "worldGames": "Jeux Mondiaux de Plage (Doha 2019, Bali 2023)",
+   "seeMore": "Voir plus"
 
 
 }
