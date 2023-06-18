@@ -165,7 +165,11 @@ const Header = () => {
                  <NavDropdown.Item>{t("media")}</NavDropdown.Item>
                 </LinkContainer>
               </NavDropdown> */}
-              <Form className=''>
+            
+            
+            </Nav>
+          </Navbar.Collapse>
+          <Form className=''>
             <FormGroup  className="">
               {/* <Label for="LanguageSelect">Language :</Label> */}
               <Input id="languageSelect" name="select" type="select" onChange={changeLanguage} >
@@ -175,10 +179,6 @@ const Header = () => {
               </Input>
             </FormGroup>
           </Form>
-            
-            </Nav>
-          </Navbar.Collapse>
-          
         </Container>
       </Navbar>
     </React.Fragment>
