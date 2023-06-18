@@ -137,12 +137,34 @@ const Header = () => {
                   <NavDropdown.Item>{t("village")}</NavDropdown.Item>
                 </LinkContainer>
               </NavDropdown>
+              {/* ========================================================= */}
+              <NavDropdown
+                style={{ color: '#001689' }}
+                title={t("media")}
+                id="navDropdown"
+                className="nav-cal"
+              >
+                <LinkContainer to="/activities">
+                  <NavDropdown.Item>{t("alb")} </NavDropdown.Item>
+                </LinkContainer>
+                <LinkContainer to="/articles">
+                  <NavDropdown.Item>{t("alb")} </NavDropdown.Item>
+                </LinkContainer>
+                {/* <LinkContainer to="/acit1">
+                  <NavDropdown.Item>{t("village")}</NavDropdown.Item>
+                </LinkContainer> */}
+              </NavDropdown>
 
-              <LinkContainer style={{ color: '#001689' }} to="/activities">
-                <Nav.Link className="nav-cal" onClick={closeNavbar}>
+{/* ========================================================================================= */}
+              {/* <NavDropdown  style={{ color: '#001689' }}
+                title={t("news")}
+                id="navDropdown"
+                className="nav-cal">
+                <LinkContainer to="/activities" onClick={closeNavbar}>
                 {t("media")}
-                </Nav.Link>
-              </LinkContainer>
+                 <NavDropdown.Item>{t("media")}</NavDropdown.Item>
+                </LinkContainer>
+              </NavDropdown> */}
               <Form className=''>
             <FormGroup  className="">
               {/* <Label for="LanguageSelect">Language :</Label> */}
