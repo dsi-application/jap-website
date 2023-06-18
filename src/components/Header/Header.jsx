@@ -68,7 +68,7 @@ const Header = () => {
           </Navbar.Brand>
         </LinkContainer>
 
-        <Container>
+        <Container >
           <Navbar.Toggle
              className="navbar-toggler"
             type="button"
@@ -84,7 +84,7 @@ const Header = () => {
 
           </Navbar.Toggle>
           <Navbar.Collapse id="navbarSupportedContent">
-            <Nav className="navbar navbar-expand-sm navbar-dark">
+            <Nav className="navbar  navbar-expand-sm navbar-dark" style={{justifyContent:"space-evenly"}}>
               <LinkContainer style={{ color: '#001689' }} to="/">
                 <Nav.Link className="nav-cal" onClick={closeNavbar}>
                  {t("home")}
@@ -137,13 +137,35 @@ const Header = () => {
                   <NavDropdown.Item>{t("village")}</NavDropdown.Item>
                 </LinkContainer>
               </NavDropdown>
+              {/* ========================================================= */}
+              <NavDropdown
+                style={{ color: '#001689' }}
+                title={t("media")}
+                id="navDropdown"
+                className="nav-cal"
+              >
+                <LinkContainer to="/activities">
+                  <NavDropdown.Item>{t("alb")} </NavDropdown.Item>
+                </LinkContainer>
+                <LinkContainer to="/articles">
+                  <NavDropdown.Item>{t("alb")} </NavDropdown.Item>
+                </LinkContainer>
+                {/* <LinkContainer to="/acit1">
+                  <NavDropdown.Item>{t("village")}</NavDropdown.Item>
+                </LinkContainer> */}
+              </NavDropdown>
 
-              <LinkContainer style={{ color: '#001689' }} to="/activities">
-                <Nav.Link className="nav-cal" onClick={closeNavbar}>
+{/* ========================================================================================= */}
+              {/* <NavDropdown  style={{ color: '#001689' }}
+                title={t("news")}
+                id="navDropdown"
+                className="nav-cal">
+                <LinkContainer to="/activities" onClick={closeNavbar}>
                 {t("media")}
-                </Nav.Link>
-              </LinkContainer>
-              <Form className='mr-2'>
+                 <NavDropdown.Item>{t("media")}</NavDropdown.Item>
+                </LinkContainer>
+              </NavDropdown> */}
+              <Form className=''>
             <FormGroup  className="">
               {/* <Label for="LanguageSelect">Language :</Label> */}
               <Input id="languageSelect" name="select" type="select" onChange={changeLanguage} >

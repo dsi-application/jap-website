@@ -79,7 +79,7 @@ Partners.defaultProps = {
   sectionDescription: "Nos partenaires sont toujours là pour nous accompagner.",
   partnersData: [
     {
-      partnerLogo: "./imageP1000.png",
+      partnerLogo: "./ooreedoo1.png",
     },
     {
       partnerLogo: "./imageP100.png",

@@ -36,8 +36,8 @@
       background-color: transparent !important;
       opacity: 0.8;
       position: absolute;
-        transition: all 0.4s ease 0s;
-        -webkit-transition: all 0.4s ease 0s;
+        transition: all 0.1s ease 0s;
+        -webkit-transition: all 0.1s ease 0s;
     }
    
     .partners-slides .owl-nav .owl-prev {
