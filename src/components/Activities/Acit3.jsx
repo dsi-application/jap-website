@@ -74,7 +74,7 @@ return (
                                             src={image}
                                             alt={"Gallery " + index}
                                             className="img-fluid"
-                                            width="360px"
+                                            width="100%"
                                             height="390px"
                                             onClick={() => openLightbox(index)}
                                         />
