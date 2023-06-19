@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import articlesData from './articles.json';
 import { Card, Col, Container , Row } from 'react-bootstrap';
 import './ListArticles.css'; 
@@ -9,8 +9,16 @@ import { Link } from 'react-router-dom';
 
 function ListArticles() {
   //console.log(i18n.language);
+  const [filtred,setFiltred]=React.useState([]);
+  //const [data,setData]=React.useState([]);
+  useEffect(() => {
+    
+    const data = articlesData.filter((article) => article.lng === i18n.language);
+    setFiltred(data);
+    console.log(i18n);
+    }, [i18n]);
+  //const filtred = articlesData.filter((article) => article.lng === i18n.language);
 
-  const filtred = articlesData.filter((article) => article.lng === i18n.language);
   return (
     <Container style={{height:'100%'}} className='mt-2'>
     <Row md={12}>
