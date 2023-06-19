@@ -1,25 +1,33 @@
 [
     {
-      "id": 1,
+      "id": "1",
+      "lng":"ar",
       "titre": "Article 1",
+      "content": "Description de l'article 1",
       "description": "Description de l'article 1",
       "photo": "./CH1.jpeg"
     },
     {
-      "id": 2,
+      "id": "2",
+      "lng":"fr",
       "titre": "Article 2",
+      "content": "Description de l'article 2",
       "description": "Description de l'article 2",
       "photo": "./CH1.jpeg"
     },
     {
-      "id": 3,
+      "id": "3",
+      "lng":"fr",
       "titre": "Article 3",
+      "content": "Description de l'article 3",
       "description": "Description de l'article 3",
       "photo": "./CH1.jpeg"
     },
     {
-      "id": 4,
+      "id": "4",
+      "lng":"en",
       "titre": "Article 4",
+      "content": "Description de l'article 4",
       "description": "Description de l'article 4",
       "photo": "./CH1.jpeg"
     }
