@@ -35,7 +35,7 @@ function Footer1() {
             className="d-flex flex-column justify-content-center"
             style={{ backgroundColor: "#0099FF", color: "white",margin:0 }}
           >
-     <div className="flex-column mt-5">
+     <div className="flex-column mt-5 " >
   <div style={{ fontFamily: 'Tropican', fontSize: '15px' }}>
     <InlineIcon icon="mdi:email" width="30" height="30" inline={false} /> jap23@cnot.org.tn
   </div>
