@@ -38,7 +38,7 @@ const Acit1 = () => {
                 <Card.Text className={i18n.language === "ar" ? "text-right" : "text-left"}>
                   {t('acti1text')}
                 </Card.Text>
-                <Card.Img style={{ height: 550, width: 900 }} variant="top" src="./parc.png" />
+                <Card.Img style={{ height: 550, width:"100%" }} variant="top" src="./parc.png" />
               </Card.Body>
               </Card>
             </Col>
@@ -55,7 +55,7 @@ const Acit1 = () => {
                 <Card.Text className={i18n.language === "ar" ? "text-right" : "text-left"}>
                   {t("hoteltext")}
                 </Card.Text>
-                <Card.Img style={{ height: 550, width: 900 }} variant="top" src="./elmedina.png" />
+                <Card.Img style={{ height: 550, width: "100%" }} variant="top" src="./elmedina.png" />
               </Card.Body>
               </Card>
             </Col>
@@ -72,7 +72,7 @@ const Acit1 = () => {
                 <Card.Text className={i18n.language === "ar" ? "text-right" : "text-left"}>
                 {t("mouraditext")}
                 </Card.Text>
-                <Card.Img style={{ height: 550, width: 900 }} variant="top" src="./elmenzah.png" />
+                <Card.Img style={{ height: 550, width:"100%" }} variant="top" src="./elmenzah.png" />
               </Card.Body>
               </Card>
             </Col>
@@ -89,7 +89,7 @@ const Acit1 = () => {
                 <Card.Text className={i18n.language === "ar" ? "text-right" : "text-left"}>
                  {t("manzahtext")}
                 </Card.Text>
-                <Card.Img style={{ height: 550, width: 900 }} variant="top" src="./hammamet.png" />
+                <Card.Img style={{ height: 550, width: "100%" }} variant="top" src="./hammamet.png" />
               </Card.Body>
               </Card>
             </Col>

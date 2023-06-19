@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "titre": "Article 1",
+      "description": "Description de l'article 1",
+      "photo": "./CH1.jpeg"
+    },
+    {
+      "id": 2,
+      "titre": "Article 2",
+      "description": "Description de l'article 2",
+      "photo": "./CH1.jpeg"
+    },
+    {
+      "id": 3,
+      "titre": "Article 3",
+      "description": "Description de l'article 3",
+      "photo": "./CH1.jpeg"
+    },
+    {
+      "id": 4,
+      "titre": "Article 4",
+      "description": "Description de l'article 4",
+      "photo": "./CH1.jpeg"
+    }
+  ]
+  

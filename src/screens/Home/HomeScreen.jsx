@@ -14,7 +14,7 @@ import Pictogramme from '../../components/Pictogramme/Pictogramme';
 const HomeScreen = () => {
 
     return (
-        <>
+        <div style={{width:"100%"}}>
               {/* <div
         style={{
           backgroundImage: `url('../../background.png')`,
@@ -49,7 +49,7 @@ const HomeScreen = () => {
             
  
 
-        </>
+        </div>
     )
 }
 

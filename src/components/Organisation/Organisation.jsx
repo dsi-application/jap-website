@@ -45,21 +45,21 @@ const Organisation = () => {
                   <Row className="margin-top-80" >
                     <Col sm={4}>
                       <ListGroup>
-                        <ListGroup.Item action href="#link1"  style={{ color: 'WHITE', backgroundColor: '#507d70'}} >
+                        <ListGroup.Item className="text-center" action href="#link1"  style={{ color: 'WHITE', backgroundColor: '#507d70'}} >
                          {t("prop")}                  </ListGroup.Item>
-                        <ListGroup.Item action href="#link2"  style={{ color: 'WHITE', backgroundColor: '#649f8e'}} >
+                        <ListGroup.Item className="text-center"  action href="#link2"  style={{ color: 'WHITE', backgroundColor: '#649f8e'}} >
                      {t("comite")}
                         </ListGroup.Item>
-                        <ListGroup.Item action href="#link3" style={{ color: 'WHITE', backgroundColor: '#78c2ad'}}>
+                        <ListGroup.Item className="text-center"  action href="#link3" style={{ color: 'WHITE', backgroundColor: '#78c2ad'}}>
                        {t("haut")}
                        </ListGroup.Item>
-<ListGroup.Item action href="#link4" style={{ color: 'WHITE', backgroundColor: '#84ceb9' }}>
+<ListGroup.Item className="text-center"  action href="#link4" style={{ color: 'WHITE', backgroundColor: '#84ceb9' }}>
   {t("commissions")}
 </ListGroup.Item>
-<ListGroup.Item action href="#link5" style={{ color: 'WHITE', backgroundColor: '#8fdac4' }}>
+<ListGroup.Item action className="text-center"  href="#link5" style={{ color: 'WHITE', backgroundColor: '#8fdac4' }}>
   {t("services")}
 </ListGroup.Item>
-<ListGroup.Item action href="#link6" style={{ color: 'WHITE', backgroundColor: '#9be6d0' }}>
+<ListGroup.Item action className="text-center"  href="#link6" style={{ color: 'WHITE', backgroundColor: '#9be6d0' }}>
   {t("benevoles")}
 </ListGroup.Item>
                
@@ -76,7 +76,7 @@ const Organisation = () => {
                             <Col style={{ textAlign: "-webkit-center" }}>
                               <Card style={{ width: "100%" }}>
 
-                              <Card.Text className=" text-left">    {t("prop")}      </Card.Text>
+                              <Card.Text className=" text-center">    {t("prop")}      </Card.Text>
 
 
                     

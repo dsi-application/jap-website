@@ -29,15 +29,15 @@ const Services = () => {
         <Container>
     
     <Fade top>    <h2  style={{ color: '#78c2ad'}} className="font-weight-bold  text-center">
-         <InlineIcon icon="mdi:kabaddi"  width="30" height="30" inline={false} /> Competition  </h2> </Fade>
+         <InlineIcon icon="mdi:kabaddi"  width="30" height="30" inline={false} /> {t("competition")} </h2> </Fade>
          <Row className="justify-content-md-center">
         <CardDeck className='card-deck'>
           <Zoom cascade>
             <Col xs="12" lg="12">
               <Card border='primary' style={{ height: "100%", width: "100%" }}>
                 <Card.Body className="main">
-                  <Card.Title className='title'>Les sports</Card.Title>
-                  <Card.Img style={{ height: "100%", width: "100%" }} variant="top" src="./PLANCHE.jpg" />
+                <Card.Title className='title' >{t("sports")} </Card.Title>               
+                   <Card.Img style={{ height: "100%", width: "100%" }} variant="top" src="./PLANCHE.jpg" />
                 </Card.Body>
               </Card>
             </Col>
@@ -50,7 +50,7 @@ const Services = () => {
             <Col xs="12" lg="12">
               <Card border='primary' style={{ height: "100%", width: "100%" }}>
                 <Card.Body className="main">
-                  <Card.Title className='title'>Les Pays participants</Card.Title>
+                <Card.Title className='title'> {t("participants")} </Card.Title>
                   <Card.Img style={{ height: "100%", width: "100%" }} variant="top" src="./drapeaux1.png" />
                 </Card.Body>
               </Card>

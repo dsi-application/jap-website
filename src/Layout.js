@@ -21,7 +21,7 @@ import Partners from './components/Partner/Partner';
 import Works from './components/Works/Works';
 import Loading from './loading';
 import Footer1 from './components/Footer/Footer1';
-
+import ListArticles from './components/Articles/ListArticles';
 
 
 const Layout = () => {
@@ -55,7 +55,7 @@ const Layout = () => {
          overflow: 'hidden',
          justifyContent: 'center',
          alignItems: 'center',
-         //animation: 'water 5s ease-in-out infinite',
+         animation: 'water 5s ease-in-out infinite',
      }}
         
         >
@@ -88,6 +88,7 @@ const Layout = () => {
             <Route exact path="/partners" component={Partners} />
             <Route exact path="/services" component={Services} />
             <Route exact path="/works" component={Works} />
+            <Route exact path="/articles" component={ListArticles} />
           </Switch>
           <Footer1 />
         </Router>
