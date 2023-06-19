@@ -1,0 +1,8 @@
+.card-animation:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    cursor : pointer;
+    border: 2px solid #00BFFF;
+    box-shadow: 0 0 10px #00BFFF;
+  }
+  
