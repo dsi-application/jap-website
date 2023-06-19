@@ -71,7 +71,8 @@ function Article() {
                 <Card.Text className={i18n.language === "ar" ? "text-right" : "text-left"}>
                 {articleData.content}
                 </Card.Text>
-                <Card.Img style={{ height: 550, width:"100%" }} variant="top" src={articleData.photo} />
+                
+                <Card.Img style={{ height: 550, width:"100%" }} variant="top" src={require(`./images${articleData.photo}`).default} />
               </Card.Body>
               </Card>
             </Col>
