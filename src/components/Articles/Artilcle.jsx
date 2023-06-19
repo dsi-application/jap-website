@@ -35,10 +35,18 @@ function Article() {
   if (!articleData) {
     return <div style={{ height: '100vh' }}>Article not found</div>;
   }
+  const formatContent = (content) => {
+    const paragraphs = content.split('.');
+  
+    return paragraphs.map((paragraph, index) => (
+      <p key={index}>{paragraph}</p>
+    ));
+  };
+
 
   return (
     <>
-    <Container style={{ height: '100vh' }}>
+    <Container style={{ height: '100%', marginBottom:"50px" }}>
       {/* <Row className='text-center font-weight-bolder my-2' style={{ textColor: '#001689' }}>
         <Col>
           <h2>{articleData.titre}</h2>
@@ -62,14 +70,20 @@ function Article() {
       </Row> */}
 {/* =========================================================================================================================== */}
 <Row className="justify-content-md-center">
-        <CardDeck className='card-deck'>
+        <CardDeck className='card-deck mb-4'>
           <Zoom cascade>
             <Col xs="12" lg="12">
               <Card border='primary' style={{ height: "100%", width: "100%" }}>
                  <Card.Body className="main">
-                <Card.Title className='title'> {articleData.titre} </Card.Title>
+                <Card.Title className='title' color='#001689'> {articleData.titre} </Card.Title>
                 <Card.Text className={i18n.language === "ar" ? "text-right" : "text-left"}>
-                {articleData.content}
+                {/* {articleData.content} */}
+                <div>
+        <p>{formatContent(articleData.content)}</p>
+        {/* {articleData.content.length > MAX_CHARACTERS && (
+          <button>Show more</button>
+        )} */}
+      </div>
                 </Card.Text>
                 
                 <Card.Img style={{ height: 550, width:"100%" }} variant="top" src={require(`./images${articleData.photo}`).default} />
