@@ -23,6 +23,7 @@ import Loading from './loading';
 import Footer1 from './components/Footer/Footer1';
 import ListArticles from './components/Articles/ListArticles';
 import Article from './components/Articles/Artilcle';
+import AddArticle from './components/Articles/AddArticle';
 
 
 const Layout = () => {
@@ -91,6 +92,7 @@ const Layout = () => {
             <Route exact path="/works" component={Works} />
             <Route exact path="/articles" component={ListArticles} />
             <Route exact path='/article/:id' component={Article} />
+            <Route exact path='/Addarticle' component={AddArticle} />
           </Switch>
           <Footer1 />
         </Router>
