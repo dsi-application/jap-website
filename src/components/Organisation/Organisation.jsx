@@ -44,26 +44,27 @@ const Organisation = () => {
                 <Tab.Container defaultActiveKey="#link1" >
                   <Row className="margin-top-80" >
                     <Col sm={4}>
-                      <ListGroup>
-                        <ListGroup.Item className="text-center" action href="#link1"  style={{ color: 'WHITE', backgroundColor: '#507d70'}} >
-                         {t("prop")}                  </ListGroup.Item>
-                        <ListGroup.Item className="text-center"  action href="#link2"  style={{ color: 'WHITE', backgroundColor: '#649f8e'}} >
-                     {t("comite")}
-                        </ListGroup.Item>
-                        <ListGroup.Item className="text-center"  action href="#link3" style={{ color: 'WHITE', backgroundColor: '#78c2ad'}}>
-                       {t("haut")}
-                       </ListGroup.Item>
-<ListGroup.Item className="text-center"  action href="#link4" style={{ color: 'WHITE', backgroundColor: '#84ceb9' }}>
-  {t("commissions")}
-</ListGroup.Item>
-<ListGroup.Item action className="text-center"  href="#link5" style={{ color: 'WHITE', backgroundColor: '#8fdac4' }}>
-  {t("services")}
-</ListGroup.Item>
-<ListGroup.Item action className="text-center"  href="#link6" style={{ color: 'WHITE', backgroundColor: '#9be6d0' }}>
-  {t("benevoles")}
-</ListGroup.Item>
-               
-                      </ListGroup>
+                    <ListGroup >
+  <ListGroup.Item className="text-center hover-item" action href="#link1" style={{ color: 'black', backgroundColor: 'rgba(80, 125, 112, 0)' }}>
+    {t("prop")}
+  </ListGroup.Item>
+  <ListGroup.Item className="text-center hover-item" action href="#link2" style={{ color: 'black ', backgroundColor: 'rgba(100, 159, 142, 0)' }}>
+    {t("comite")}
+  </ListGroup.Item>
+  <ListGroup.Item className="text-center hover-item" action href="#link3" style={{ color: 'black', backgroundColor: 'rgba(120, 194, 173, 0)' }}>
+    {t("haut")}
+  </ListGroup.Item>
+  <ListGroup.Item className="text-center hover-item" action href="#link4" style={{ color: 'black', backgroundColor: 'rgba(132, 206, 185, 0)' }}>
+    {t("commissions")}
+  </ListGroup.Item>
+  <ListGroup.Item className="text-center hover-item" action href="#link5" style={{ color: 'black', backgroundColor: 'rgba(143, 218, 196, 0)' }}>
+    {t("services")}
+  </ListGroup.Item>
+  <ListGroup.Item className="text-center hover-item" action href="#link6" style={{ color: 'black', backgroundColor: 'rgba(155, 230, 208, 0)' }}>
+    {t("benevoles")}
+  </ListGroup.Item>
+</ListGroup>
+
                     </Col>
 
                     <Col sm={8}>

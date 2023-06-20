@@ -31,7 +31,7 @@ const Counter = () => {
                 <div className="row">
                   <div className="col-lg-4 col-md-6">
                     <div className="counter">
-                      <CountUp start={0} end={1410} delay={0} duration={10} separator="">
+                      <CountUp start={0} end={1412} delay={0} duration={10} separator="">
                         {({ countUpRef }) => (
                           <span className="counter-value" ref={countUpRef} />
                         )}

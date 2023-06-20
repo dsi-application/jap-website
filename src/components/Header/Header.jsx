@@ -148,7 +148,7 @@ const Header = () => {
                   <NavDropdown.Item>{t("alb")} </NavDropdown.Item>
                 </LinkContainer>
                 <LinkContainer to="/articles">
-                  <NavDropdown.Item>{t("alb")} </NavDropdown.Item>
+                  <NavDropdown.Item>{t("art")} </NavDropdown.Item>
                 </LinkContainer>
                 {/* <LinkContainer to="/acit1">
                   <NavDropdown.Item>{t("village")}</NavDropdown.Item>
@@ -165,7 +165,11 @@ const Header = () => {
                  <NavDropdown.Item>{t("media")}</NavDropdown.Item>
                 </LinkContainer>
               </NavDropdown> */}
-              <Form className=''>
+            
+            
+            </Nav>
+          </Navbar.Collapse>
+          <Form className=''>
             <FormGroup  className="">
               {/* <Label for="LanguageSelect">Language :</Label> */}
               <Input id="languageSelect" name="select" type="select" onChange={changeLanguage} >
@@ -175,10 +179,6 @@ const Header = () => {
               </Input>
             </FormGroup>
           </Form>
-            
-            </Nav>
-          </Navbar.Collapse>
-          
         </Container>
       </Navbar>
     </React.Fragment>

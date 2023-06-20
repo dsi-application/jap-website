@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+
 import axios from 'axios';
 import { Card, Col, Container, Row } from 'react-bootstrap';
 import './ListArticles.css';
@@ -24,10 +25,12 @@ function ListArticles() {
 
   const filteredArticles = articles.filter((article) => article.lng === i18n.language);
 
+
   return (
     <Container style={{ height: '100%' }} className='mt-2'>
       <Row md={12}>
         {filteredArticles.map((article) => (
+
           <Col md={4} xs={12} sm={12}>
             <Card className='card-animation' key={article._id} style={{ width: '100%', margin: '15px' }}>
               <Card.Img variant='top' src={`${url}/uploads/${article.photo}`} alt={article.titre} />
@@ -39,6 +42,7 @@ function ListArticles() {
                 </Link>
               </Card.Body>
             </Card>
+
           </Col>
         ))}
       </Row>

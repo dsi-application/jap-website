@@ -55,13 +55,13 @@ const SliderComponent = () => {
           <div className="wave"></div>
         </div>
       </div>
-      </div>
+      </div>*/}
       <br>
       </br>
       <br></br>
       <div className="counter-container">
         <Counter />
-      </div> */}
+      </div> 
     </>
   );
 };
