@@ -38,3 +38,9 @@
     font-size: 23px;
     margin-top: 40px;
 }
+.hover-item:hover,
+.hover-item:active,
+.hover-item:focus {
+  background-color: #d40054 !important;
+  
+}
