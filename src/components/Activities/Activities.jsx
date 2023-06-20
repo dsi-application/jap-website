@@ -24,7 +24,7 @@ const blogdata = blogsData.map((blog, index) => (
     <div className="col-md-6 col-lg-6 main" key={index}>
         <div className="blog-item">
             <Link to={blog.postLink} className="blog-img">
-                <img src={blog.postImage} alt="blog-one" />
+                <img style={{width:"100%"}} src={blog.postImage} alt="blog-one" />
                 <br /> <br /> <br />
             </Link>
             <div className="title-meta text-center ">

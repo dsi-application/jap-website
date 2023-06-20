@@ -16,10 +16,10 @@ const SliderComponent = () => {
   // }, []);
 
   let slides = [
-    <img  style={{width:"100%"}} src="./Solari1.png" alt="1" />,
-    <img style={{width:"100%"}} src="./Solari2.png" alt="2" />  ,
-    <img style={{width:"100%"}} src="./Solari3.png" alt="3" />  ,
-    <img style={{width:"100%"}} src="./Solari4.png" alt="4" />  ,
+    <img  style={{width:"100%"}} src="./Nslide1.png" alt="1" />,
+    <img style={{width:"100%"}} src="./Nslide2.png" alt="2" />  ,
+    <img style={{width:"100%"}} src="./Nslide3.png" alt="3" />  ,
+    <img style={{width:"100%"}} src="./Nslide4.png" alt="4" />  ,
     // <img src="./slide2.png" alt="5" />  
    ];
     const callback = function(index){
@@ -55,13 +55,13 @@ const SliderComponent = () => {
           <div className="wave"></div>
         </div>
       </div>
-      </div>
+      </div>*/}
       <br>
       </br>
       <br></br>
       <div className="counter-container">
         <Counter />
-      </div> */}
+      </div> 
     </>
   );
 };

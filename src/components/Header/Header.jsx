@@ -148,7 +148,7 @@ const Header = () => {
                   <NavDropdown.Item>{t("alb")} </NavDropdown.Item>
                 </LinkContainer>
                 <LinkContainer to="/articles">
-                  <NavDropdown.Item>{t("alb")} </NavDropdown.Item>
+                  <NavDropdown.Item>{t("art")} </NavDropdown.Item>
                 </LinkContainer>
                 {/* <LinkContainer to="/acit1">
                   <NavDropdown.Item>{t("village")}</NavDropdown.Item>
