@@ -11,7 +11,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function ListArticles() {
   const [articles, setArticles] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [articlesPerPage] = useState(1);
+  const [articlesPerPage] = useState(6);
   const [filteredArticles, setFilteredArticles] = useState([]);
   const url = 'http://localhost:3002';
 
@@ -27,6 +27,51 @@ function ListArticles() {
     }
   }, [queryParams]);
 
+ 
+
+  // useEffect(() => {
+  //   filterArticles();
+  // }, [i18n.language, articles]);
+  
+  useEffect(() => {
+    fetchArticles();
+  }, [i18n.language]);
+  
+  // useEffect(() => {
+  //   filterArticles();
+  // }, [articles]);
+  
+  const fetchArticles = async () => {
+    try {
+      const response = await axios.get('http://localhost:3002/articles');
+      setArticles(response.data);
+      console.log('Response:', response.data); // Debug logging
+    } catch (error) {
+      console.error('Error fetching articles:', error);
+    }
+  };
+  
+  // const filterArticles = () => {
+  //   console.log('All Articles:', articles); // Debug logging
+  //   const filtered = articles.filter((article) => article.lng === i18n.language);
+  //   console.log('Filtered Articles:', filtered); // Debug logging
+  //   setFilteredArticles(filtered);
+  // };
+  
+  
+  
+  
+
+  // Pagination
+  const indexOfLastArticle = currentPage * articlesPerPage;
+  const indexOfFirstArticle = indexOfLastArticle - articlesPerPage;
+  const currentArticles = articles.slice(indexOfFirstArticle, indexOfLastArticle);
+  const totalPages = Math.ceil(articles.length / articlesPerPage);
+
+  const handlePageChange = (pageNumber) => {
+    setCurrentPage(pageNumber);
+  };
+
   const deleteArticle = async (id) => {
     try {
       await axios.delete(`http://localhost:3002/articles/${id}`);
@@ -34,38 +79,6 @@ function ListArticles() {
     } catch (error) {
       console.error('Error deleting article:', error);
     }
-  };
-
-  useEffect(() => {
-    fetchArticles();
-  }, []);
-
-  useEffect(() => {
-    filterArticles();
-  }, [i18n.language, articles]);
-
-  const fetchArticles = async () => {
-    try {
-      const response = await axios.get('http://localhost:3002/articles');
-      setArticles(response.data);
-    } catch (error) {
-      console.error('Error fetching articles:', error);
-    }
-  };
-
-  const filterArticles = () => {
-    const filtered = articles.filter((article) => article.lng === i18n.language);
-    setFilteredArticles(filtered);
-  };
-
-  // Pagination
-  const indexOfLastArticle = currentPage * articlesPerPage;
-  const indexOfFirstArticle = indexOfLastArticle - articlesPerPage;
-  const currentArticles = filteredArticles.slice(indexOfFirstArticle, indexOfLastArticle);
-  const totalPages = Math.ceil(filteredArticles.length / articlesPerPage);
-
-  const handlePageChange = (pageNumber) => {
-    setCurrentPage(pageNumber);
   };
 
   return (
