@@ -32,3 +32,24 @@
 .btn-primary {
   margin-top: auto;
 }
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination .page-link {
+  color: #007bff;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.pagination .page-link:focus,
+.pagination .page-link:hover {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #fff;
+}
