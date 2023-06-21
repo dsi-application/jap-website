@@ -4,17 +4,17 @@ import { Card, Col, Container, Row } from 'react-bootstrap';
 import './ListArticles.css';
 import i18n from '../../i18n';
 import { Link } from 'react-router-dom';
-
 import { useLocation } from 'react-router-dom/cjs/react-router-dom';
-
 import Pagination from 'react-bootstrap/Pagination';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 
 function ListArticles() {
   const [articles, setArticles] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [articlesPerPage] = useState(6);
+  
+  const [filteredArticles, setFilteredArticles] = useState([]);
+
   const url = 'http://localhost:3002';
 
   const location = useLocation();
@@ -23,47 +23,64 @@ function ListArticles() {
   const [deleteA, setDeleteA] = useState(false);
 
   useEffect(() => {
-    const myParamValue = queryParams.get("deleteA");
-    if (myParamValue === "ok") {
+    const myParamValue = queryParams.get('deleteA');
+    if (myParamValue === 'ok') {
       setDeleteA(true);
     }
-  });
+  }, [queryParams]);
 
-  const deleteArticle = async (id) => {
-    try {
-      const response = await axios.delete('http://localhost:3002/articles/'+id);
-      setArticles(
-          articles.filter(  article=>
-            article._id!==id
-          ));
-    } catch (error) {
-      console.error('Error fetching articles:', error);
-    }
-  };
+ 
 
+  // useEffect(() => {
+  //   filterArticles();
+  // }, [i18n.language, articles]);
+  
   useEffect(() => {
     fetchArticles();
-  }, []);
-
+  }, [i18n.language]);
+  
+  // useEffect(() => {
+  //   filterArticles();
+  // }, [articles]);
+  
   const fetchArticles = async () => {
     try {
-      const response = await axios.get('http://localhost:3002/articles');
+      const response = await axios.get(`${url}/articles`);
       setArticles(response.data);
+      console.log('Response:', response.data); // Debug logging
     } catch (error) {
       console.error('Error fetching articles:', error);
     }
   };
-
-  const filteredArticles = articles.filter((article) => article.lng === i18n.language);
+  
+  // const filterArticles = () => {
+  //   console.log('All Articles:', articles); // Debug logging
+  //   const filtered = articles.filter((article) => article.lng === i18n.language);
+  //   console.log('Filtered Articles:', filtered); // Debug logging
+  //   setFilteredArticles(filtered);
+  // };
+  
+  
+  
+  
 
   // Pagination
   const indexOfLastArticle = currentPage * articlesPerPage;
   const indexOfFirstArticle = indexOfLastArticle - articlesPerPage;
-  const currentArticles = filteredArticles.slice(indexOfFirstArticle, indexOfLastArticle);
-  const totalPages = Math.ceil(filteredArticles.length / articlesPerPage);
+  const currentArticles = articles.slice(indexOfFirstArticle, indexOfLastArticle);
+  const totalPages = Math.ceil(articles.length / articlesPerPage);
 
   const handlePageChange = (pageNumber) => {
     setCurrentPage(pageNumber);
+  };
+
+  const deleteArticle = async (id) => {
+    try {
+      await axios.delete(`${url}/articles/${id}`);
+      setArticles((prevArticles) => prevArticles.filter((article) => article._id !== id));
+    } catch (error) {
+      console.error('Error deleting article:', error);
+    }
   };
 
   return (
@@ -79,11 +96,14 @@ function ListArticles() {
                 <Link to={`/article/${article._id}`} className='btn btn-primary'>
                   Read More
                 </Link>
-                {
-                  deleteA && <button className="btn btn-sm btn-danger" onClick={
-                   ()=> deleteArticle(article._id)
-                  }>Remove</button>
-                }
+                {deleteA && (
+                  <button
+                    className='btn btn-sm btn-danger'
+                    onClick={() => deleteArticle(article._id)}
+                  >
+                    Remove
+                  </button>
+                )}
               </Card.Body>
             </Card>
           </Col>
