@@ -43,7 +43,7 @@ function ListArticles() {
   
   const fetchArticles = async () => {
     try {
-      const response = await axios.get('http://localhost:3002/articles');
+      const response = await axios.get(`${url}/articles`);
       setArticles(response.data);
       console.log('Response:', response.data); // Debug logging
     } catch (error) {
@@ -74,7 +74,7 @@ function ListArticles() {
 
   const deleteArticle = async (id) => {
     try {
-      await axios.delete(`http://localhost:3002/articles/${id}`);
+      await axios.delete(`${url}/articles/${id}`);
       setArticles((prevArticles) => prevArticles.filter((article) => article._id !== id));
     } catch (error) {
       console.error('Error deleting article:', error);
