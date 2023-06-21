@@ -120,7 +120,7 @@ app.delete('/articles/:id', async (req, res) => {
   const { id } = req.params;
 
   try {
-    const article = await Article.findOneAndDelete({ id });
+    const article = await Article.findByIdAndRemove( req.params.id );
 
     if (article) {
       res.json(article);

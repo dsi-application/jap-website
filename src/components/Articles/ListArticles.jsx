@@ -4,14 +4,42 @@ import { Card, Col, Container, Row } from 'react-bootstrap';
 import './ListArticles.css';
 import i18n from '../../i18n';
 import { Link } from 'react-router-dom';
+
+import { useLocation } from 'react-router-dom/cjs/react-router-dom';
+
 import Pagination from 'react-bootstrap/Pagination';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function ListArticles() {
   const [articles, setArticles] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [articlesPerPage] = useState(1);
   const url = 'http://localhost:3002';
+
+  const location = useLocation();
+  const queryParams = new URLSearchParams(location.search);
+
+  const [deleteA, setDeleteA] = useState(false);
+
+  useEffect(() => {
+    const myParamValue = queryParams.get("deleteA");
+    if (myParamValue === "ok") {
+      setDeleteA(true);
+    }
+  });
+
+  const deleteArticle = async (id) => {
+    try {
+      const response = await axios.delete('http://localhost:3002/articles/'+id);
+      setArticles(
+          articles.filter(  article=>
+            article._id!==id
+          ));
+    } catch (error) {
+      console.error('Error fetching articles:', error);
+    }
+  };
 
   useEffect(() => {
     fetchArticles();
@@ -51,6 +79,11 @@ function ListArticles() {
                 <Link to={`/article/${article._id}`} className='btn btn-primary'>
                   Read More
                 </Link>
+                {
+                  deleteA && <button className="btn btn-sm btn-danger" onClick={
+                   ()=> deleteArticle(article._id)
+                  }>Remove</button>
+                }
               </Card.Body>
             </Card>
           </Col>
