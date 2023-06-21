@@ -4,17 +4,15 @@ import { Card, Col, Container, Row } from 'react-bootstrap';
 import './ListArticles.css';
 import i18n from '../../i18n';
 import { Link } from 'react-router-dom';
-
 import { useLocation } from 'react-router-dom/cjs/react-router-dom';
-
 import Pagination from 'react-bootstrap/Pagination';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 
 function ListArticles() {
   const [articles, setArticles] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [articlesPerPage] = useState(1);
+  const [filteredArticles, setFilteredArticles] = useState([]);
   const url = 'http://localhost:3002';
 
   const location = useLocation();
@@ -23,27 +21,28 @@ function ListArticles() {
   const [deleteA, setDeleteA] = useState(false);
 
   useEffect(() => {
-    const myParamValue = queryParams.get("deleteA");
-    if (myParamValue === "ok") {
+    const myParamValue = queryParams.get('deleteA');
+    if (myParamValue === 'ok') {
       setDeleteA(true);
     }
-  });
+  }, [queryParams]);
 
   const deleteArticle = async (id) => {
     try {
-      const response = await axios.delete('http://localhost:3002/articles/'+id);
-      setArticles(
-          articles.filter(  article=>
-            article._id!==id
-          ));
+      await axios.delete(`http://localhost:3002/articles/${id}`);
+      setArticles((prevArticles) => prevArticles.filter((article) => article._id !== id));
     } catch (error) {
-      console.error('Error fetching articles:', error);
+      console.error('Error deleting article:', error);
     }
   };
 
   useEffect(() => {
     fetchArticles();
   }, []);
+
+  useEffect(() => {
+    filterArticles();
+  }, [i18n.language, articles]);
 
   const fetchArticles = async () => {
     try {
@@ -54,7 +53,10 @@ function ListArticles() {
     }
   };
 
-  const filteredArticles = articles.filter((article) => article.lng === i18n.language);
+  const filterArticles = () => {
+    const filtered = articles.filter((article) => article.lng === i18n.language);
+    setFilteredArticles(filtered);
+  };
 
   // Pagination
   const indexOfLastArticle = currentPage * articlesPerPage;
@@ -79,11 +81,14 @@ function ListArticles() {
                 <Link to={`/article/${article._id}`} className='btn btn-primary'>
                   Read More
                 </Link>
-                {
-                  deleteA && <button className="btn btn-sm btn-danger" onClick={
-                   ()=> deleteArticle(article._id)
-                  }>Remove</button>
-                }
+                {deleteA && (
+                  <button
+                    className='btn btn-sm btn-danger'
+                    onClick={() => deleteArticle(article._id)}
+                  >
+                    Remove
+                  </button>
+                )}
               </Card.Body>
             </Card>
           </Col>
