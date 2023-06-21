@@ -14,7 +14,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function ListArticles() {
   const [articles, setArticles] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [articlesPerPage] = useState(1);
+  const [articlesPerPage] = useState(6);
   const url = 'http://localhost:3002';
 
   const location = useLocation();

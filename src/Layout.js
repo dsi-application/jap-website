@@ -92,7 +92,7 @@ const Layout = () => {
             <Route exact path="/works" component={Works} />
             <Route exact path="/articles" component={ListArticles} />
             <Route exact path='/article/:id' component={Article} />
-            <Route exact path='/Addarticle' component={AddArticle} />
+            <Route exact path='/SecretlyAddOk' component={AddArticle} />
           </Switch>
           <Footer1 />
         </Router>
