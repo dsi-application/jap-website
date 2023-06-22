@@ -14,6 +14,7 @@ function AddArticle() {
   const [picture, setPicture] = useState(null);
   const [lng, setLng] = useState('');
   const [dropdown, setDropdown] = useState('Select Language');
+  const url = process.env.REACT_APP_API_URL; // Access the environment variable
 
   const handleLanguageChange = (value) => {
     setLng(value);
@@ -51,7 +52,7 @@ function AddArticle() {
         };
 
         try {
-          const response = await axios.post('http://localhost:3002/articles', formData);
+          const response = await axios.post(`${url}'/articles'`, formData);
           alert("done");
           console.log('Article added:', response.data);
           // Perform any additional actions or show success message

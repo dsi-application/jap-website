@@ -15,7 +15,7 @@ function ListArticles() {
   
   const [filteredArticles, setFilteredArticles] = useState([]);
 
-  const url = 'http://localhost:3002';
+  const url = process.env.REACT_APP_API_URL; // Access the environment variable
 
   const location = useLocation();
   const queryParams = new URLSearchParams(location.search);
@@ -89,7 +89,7 @@ function ListArticles() {
         {currentArticles.map((article) => (
           <Col md={4} xs={12} sm={12} key={article._id}>
             <Card className='card-animation' style={{ width: '100%', margin: '15px' }}>
-              <Card.Img variant='top' src={`${url}/uploads/${article.photo}`} alt={article.titre} />
+              <Card.Img variant='top' src={`${article.photo}`} alt={article.titre} />
               <Card.Body>
                 <Card.Title>{article.titre}</Card.Title>
                 <Card.Text>{article.description}</Card.Text>

@@ -14,7 +14,8 @@ import axios from 'axios';
 function Article() {
   const { id } = useParams();
   const [articleData, setArticleData] = useState(null);
-  const url = 'http://localhost:3002';
+  const url = process.env.REACT_APP_API_URL; // Access the environment variable
+
 
   useEffect(() => {
     axios
@@ -60,7 +61,7 @@ function Article() {
                     <Card.Img
                       style={{ height: 550, width: '100%' }}
                       variant="top"
-                      src={`${url}/uploads/${articleData.photo}`}
+                      src={`${articleData.photo}`}
                     />
                   </Card.Body>
                 </Card>
