@@ -18,7 +18,7 @@ function Article() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:3002/articles/${id}`)
+      .get(`${url}/articles/${id}`)
       .then((response) => {
         setArticleData(response.data);
       })
