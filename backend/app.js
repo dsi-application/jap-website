@@ -35,30 +35,21 @@ app.use(express.json());
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 // Create an article
-app.post('/articles', upload.single('photo'), async (req, res) => {
-    const { lng, titre, content, description } = req.body;
-    const photo = req.file;
+app.post('/articles', async (req, res) => {
+    const { lng, titre, content, description,imgUrl } = req.body;
+   console.log(req.body);
   
-    try {
-      let filename = '';
-      if (photo) {
-        filename = `${Date.now()}-${photo.originalname}`;
-        fs.renameSync(photo.path, `uploads/${filename}`);
-      }
   
       const article = await Article.create({
         lng,
         titre,
         content,
         description,
-        photo: filename,
+        photo: imgUrl,
       });
   
       res.status(201).json(article);
-    } catch (err) {
-      console.error(err);
-      res.status(500).json({ error: 'An error occurred' });
-    }
+   
   });
 
   
